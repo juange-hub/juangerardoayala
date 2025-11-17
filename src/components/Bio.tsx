@@ -6,17 +6,17 @@ export const Bio = () => {
     {
       icon: Music,
       title: "Especialización",
-      description: "Piano, Violín y Teoría Musical"
+      description: "Flauta y Dirección de Orquesta"
     },
     {
       icon: Award,
       title: "Experiencia",
-      description: "15+ años enseñando"
+      description: "Solista de Orquestas Sinfónicas"
     },
     {
       icon: Users,
-      title: "Estudiantes",
-      description: "200+ alumnos formados"
+      title: "Trayectoria",
+      description: "Director y Pedagogo Musical"
     }
   ];
 
@@ -29,14 +29,14 @@ export const Bio = () => {
         
         <div className="max-w-4xl mx-auto mb-16">
           <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-            Con más de 15 años de experiencia en la enseñanza musical, me dedico a formar músicos con una 
-            sólida base técnica y una profunda comprensión artística. Mi enfoque pedagógico combina la 
-            tradición clásica con metodologías modernas adaptadas a cada estudiante.
+            Como flautista solista y director de orquesta, he dedicado mi carrera a la música sinfónica y 
+            a la formación de nuevos talentos. Mi experiencia como solista en orquestas sinfónicas me ha 
+            permitido desarrollar una técnica depurada y un profundo entendimiento del repertorio clásico.
           </p>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            Graduado del Conservatorio Superior con honores, he tenido el privilegio de estudiar con 
-            maestros reconocidos internacionalmente y de llevar ese conocimiento a mis alumnos, 
-            ayudándoles a alcanzar sus metas musicales.
+            Combino mi pasión por la interpretación con la enseñanza, compartiendo conocimientos técnicos 
+            y artísticos que he adquirido a lo largo de mi trayectoria profesional en escenarios nacionales 
+            e internacionales.
           </p>
         </div>
 

@@ -20,10 +20,10 @@ export const Hero = () => {
       
       <div className="relative z-10 container mx-auto px-4 text-center">
         <h1 className="text-5xl md:text-7xl font-bold mb-6 text-primary-foreground animate-fade-in">
-          Maestro en Música Clásica
+          Juan Gerardo Ayala
         </h1>
         <p className="text-xl md:text-2xl mb-8 text-primary-foreground/90 max-w-2xl mx-auto">
-          Más de 15 años de experiencia formando músicos profesionales
+          Flautista Solista y Director de Orquesta
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Button 

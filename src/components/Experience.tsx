@@ -3,28 +3,28 @@ import { Card } from "@/components/ui/card";
 export const Experience = () => {
   const timeline = [
     {
-      year: "2023 - Presente",
-      title: "Maestro Principal",
-      institution: "Academia de Música Avanzada",
-      description: "Dirección de programa de estudios superiores en música clásica"
+      year: "2020 - Presente",
+      title: "Director de Orquesta y Pedagogo",
+      institution: "Proyectos Orquestales y Academia Musical",
+      description: "Dirección de agrupaciones sinfónicas y formación de flautistas profesionales"
     },
     {
-      year: "2018 - 2023",
-      title: "Profesor Titular",
-      institution: "Conservatorio Nacional",
-      description: "Enseñanza de piano, violín y teoría musical a nivel profesional"
+      year: "2015 - Presente",
+      title: "Solista de Flauta",
+      institution: "Orquestas Sinfónicas",
+      description: "Actuación como solista principal en orquestas sinfónicas reconocidas"
     },
     {
-      year: "2015 - 2018",
-      title: "Intérprete Profesional",
-      institution: "Orquesta Sinfónica Nacional",
-      description: "Primer violín en temporadas regulares y giras internacionales"
+      year: "2010 - 2020",
+      title: "Flautista Principal",
+      institution: "Orquestas Sinfónicas Profesionales",
+      description: "Primera flauta en temporadas regulares, conciertos y giras"
     },
     {
-      year: "2008 - 2015",
+      year: "2005 - 2010",
       title: "Formación Profesional",
       institution: "Conservatorio Superior",
-      description: "Licenciatura y Maestría en Interpretación Musical"
+      description: "Estudios especializados en flauta y dirección orquestal"
     }
   ];
 
