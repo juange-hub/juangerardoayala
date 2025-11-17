@@ -1,0 +1,48 @@
+import { Button } from "@/components/ui/button";
+import heroImage from "@/assets/hero-musician.jpg";
+
+export const Hero = () => {
+  const scrollToSection = (id: string) => {
+    const element = document.getElementById(id);
+    element?.scrollIntoView({ behavior: "smooth" });
+  };
+
+  return (
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      <div 
+        className="absolute inset-0 bg-cover bg-center"
+        style={{ 
+          backgroundImage: `url(${heroImage})`,
+        }}
+      >
+        <div className="absolute inset-0 bg-gradient-to-b from-primary/90 via-primary/70 to-background"></div>
+      </div>
+      
+      <div className="relative z-10 container mx-auto px-4 text-center">
+        <h1 className="text-5xl md:text-7xl font-bold mb-6 text-primary-foreground animate-fade-in">
+          Maestro en Música Clásica
+        </h1>
+        <p className="text-xl md:text-2xl mb-8 text-primary-foreground/90 max-w-2xl mx-auto">
+          Más de 15 años de experiencia formando músicos profesionales
+        </p>
+        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <Button 
+            size="lg" 
+            className="bg-accent text-accent-foreground hover:bg-accent/90 shadow-[var(--shadow-glow)] transition-[var(--transition-smooth)]"
+            onClick={() => scrollToSection("clases")}
+          >
+            Ver Clases
+          </Button>
+          <Button 
+            size="lg" 
+            variant="outline"
+            className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary transition-[var(--transition-smooth)]"
+            onClick={() => scrollToSection("bio")}
+          >
+            Conocer Más
+          </Button>
+        </div>
+      </div>
+    </section>
+  );
+};
