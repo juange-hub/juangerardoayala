@@ -10,8 +10,8 @@ export const Classes = () => {
       price: "$50",
       duration: "por sesión de 60 min",
       features: [
-        "Atención personalizada",
-        "Programa adaptado a tu nivel",
+        "Atención personalizada en flauta",
+        "Técnica y repertorio adaptado",
         "Material de estudio incluido",
         "Horario flexible"
       ],
@@ -23,8 +23,8 @@ export const Classes = () => {
       duration: "4 clases / mes",
       features: [
         "Ahorra $20 por mes",
-        "Clases semanales programadas",
-        "Seguimiento continuo",
+        "Clases semanales de flauta",
+        "Seguimiento continuo de progreso",
         "Material de estudio incluido",
         "Acceso a recursos online"
       ],
@@ -36,11 +36,11 @@ export const Classes = () => {
       duration: "8 clases / mes",
       features: [
         "Ahorra $50 por mes",
-        "2 clases semanales",
-        "Preparación para exámenes",
+        "2 clases semanales intensivas",
+        "Preparación para audiciones",
         "Material premium incluido",
         "Acceso a recursos online",
-        "Soporte entre clases"
+        "Técnica avanzada de interpretación"
       ],
       popular: false
     }
@@ -53,7 +53,7 @@ export const Classes = () => {
           Clases Particulares
         </h2>
         <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-          Elige el plan que mejor se adapte a tus necesidades y objetivos musicales
+          Clases de flauta con enfoque profesional - Elige el plan que mejor se adapte a tus objetivos musicales
         </p>
 
         <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto mb-16">
