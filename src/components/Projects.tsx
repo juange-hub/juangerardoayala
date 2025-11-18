@@ -1,6 +1,7 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Users, MapPin, Calendar, Target } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Users, MapPin, Calendar, Target, Youtube, ExternalLink } from "lucide-react";
 
 const projects = [
   {
@@ -14,7 +15,17 @@ const projects = [
       "12 masterclasses con artistas internacionales",
       "5 conciertos públicos gratuitos"
     ],
-    tags: ["Festival", "Internacional", "Masterclass"]
+    tags: ["Festival", "Internacional", "Masterclass"],
+    videos: [
+      {
+        title: "Concierto de Apertura",
+        url: "https://youtube.com/watch?v=example1"
+      },
+      {
+        title: "Masterclass con Emmanuel Pahud",
+        url: "https://youtube.com/watch?v=example2"
+      }
+    ]
   },
   {
     title: "Encuentro de Flauta Latinoamericana",
@@ -27,7 +38,17 @@ const projects = [
       "8 talleres especializados",
       "3 conciertos temáticos"
     ],
-    tags: ["Latinoamérica", "Educación", "Cultura"]
+    tags: ["Latinoamérica", "Educación", "Cultura"],
+    videos: [
+      {
+        title: "Taller de Música Folclórica",
+        url: "https://youtube.com/watch?v=example3"
+      },
+      {
+        title: "Concierto Final",
+        url: "https://youtube.com/watch?v=example4"
+      }
+    ]
   },
   {
     title: "Masterclass con Solistas Europeos",
@@ -40,7 +61,17 @@ const projects = [
       "10 sesiones intensivas",
       "Repertorio orquestal y contemporáneo"
     ],
-    tags: ["Masterclass", "Europa", "Profesional"]
+    tags: ["Masterclass", "Europa", "Profesional"],
+    videos: [
+      {
+        title: "Masterclass Repertorio Orquestal",
+        url: "https://youtube.com/watch?v=example5"
+      },
+      {
+        title: "Técnica Avanzada",
+        url: "https://youtube.com/watch?v=example6"
+      }
+    ]
   }
 ];
 
@@ -111,6 +142,31 @@ export const Projects = () => {
                     </Badge>
                   ))}
                 </div>
+
+                {project.videos && project.videos.length > 0 && (
+                  <div className="pt-4 border-t border-border">
+                    <div className="flex items-center gap-2 mb-3">
+                      <Youtube className="w-4 h-4 text-red-600" />
+                      <span className="text-sm font-semibold text-foreground">Videos</span>
+                    </div>
+                    <div className="space-y-2">
+                      {project.videos.map((video, i) => (
+                        <a
+                          key={i}
+                          href={video.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="flex items-center justify-between p-2 rounded-md hover:bg-muted/50 transition-colors group"
+                        >
+                          <span className="text-sm text-muted-foreground group-hover:text-foreground transition-colors">
+                            {video.title}
+                          </span>
+                          <ExternalLink className="w-4 h-4 text-muted-foreground group-hover:text-primary transition-colors" />
+                        </a>
+                      ))}
+                    </div>
+                  </div>
+                )}
               </CardContent>
             </Card>
           ))}
