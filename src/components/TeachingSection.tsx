@@ -1,21 +1,16 @@
-import { GraduationCap, Users, Baby, Sparkles } from "lucide-react";
+import { GraduationCap, Users, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const levels = [
   {
-    icon: Baby,
-    title: "Niños",
-    description: "Iniciación musical desde temprana edad con métodos lúdicos y creativos"
-  },
-  {
     icon: Users,
     title: "Jóvenes y Adultos",
-    description: "Técnica profesional adaptada a tus objetivos musicales"
+    description: "Técnica profesional adaptada a tus objetivos musicales, sin importar tu edad o experiencia previa"
   },
   {
     icon: GraduationCap,
     title: "Estudiantes Avanzados",
-    description: "Preparación para conservatorios, audiciones y concursos"
+    description: "Preparación para conservatorios, audiciones y concursos internacionales"
   },
   {
     icon: Sparkles,
@@ -49,7 +44,7 @@ export const TeachingSection = () => {
           </p>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+        <div className="grid sm:grid-cols-1 md:grid-cols-3 gap-6 mb-12">
           {levels.map((level, index) => (
             <div 
               key={index}
