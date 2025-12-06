@@ -1,5 +1,6 @@
-import { GraduationCap, Users, Sparkles } from "lucide-react";
+import { GraduationCap, Users, Sparkles, MapPin, Video, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Card } from "@/components/ui/card";
 
 const levels = [
   {
@@ -16,6 +17,21 @@ const levels = [
     icon: Sparkles,
     title: "Aficionados",
     description: "Aprende a tu ritmo y disfruta el placer de hacer música"
+  }
+];
+
+const modalities = [
+  {
+    icon: MapPin,
+    title: "Clases Presenciales",
+    description: "Clases en local propio o a domicilio del alumno. Experiencia personalizada y seguimiento directo.",
+    phone: "+595 981 123456"
+  },
+  {
+    icon: Video,
+    title: "Clases Online",
+    description: "Clases virtuales para mayor flexibilidad. Disponible para todos los niveles.",
+    phone: "+595 981 123456"
   }
 ];
 
@@ -61,6 +77,47 @@ export const TeachingSection = () => {
               </p>
             </div>
           ))}
+        </div>
+
+        {/* Modalidades */}
+        <div className="mb-16">
+          <h3 className="text-2xl md:text-3xl font-serif text-center text-foreground mb-8">
+            Modalidades de Atención
+          </h3>
+          <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+            {modalities.map((modality, index) => (
+              <Card 
+                key={index}
+                className="p-6 hover:shadow-elegant hover:border-primary/30 transition-all duration-300"
+              >
+                <div className="flex items-start gap-4">
+                  <div className="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center flex-shrink-0">
+                    <modality.icon className="w-7 h-7 text-primary" />
+                  </div>
+                  <div className="flex-1">
+                    <h4 className="text-lg font-semibold text-foreground mb-2">
+                      {modality.title}
+                    </h4>
+                    <p className="text-sm text-muted-foreground mb-4">
+                      {modality.description}
+                    </p>
+                    <div className="flex items-center gap-2 text-sm text-muted-foreground mb-4">
+                      <Phone className="w-4 h-4" />
+                      <span>{modality.phone}</span>
+                    </div>
+                    <Button 
+                      variant="outline" 
+                      size="sm"
+                      onClick={handleScheduleClass}
+                      className="w-full"
+                    >
+                      Agendar Clase Experimental
+                    </Button>
+                  </div>
+                </div>
+              </Card>
+            ))}
+          </div>
         </div>
 
         <div className="text-center">

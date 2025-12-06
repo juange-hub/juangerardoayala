@@ -113,10 +113,6 @@ export const Classes = () => {
                   <Check className="w-5 h-5 text-accent" />
                   <span>Transferencia bancaria</span>
                 </div>
-                <div className="flex items-center gap-2 text-muted-foreground">
-                  <Check className="w-5 h-5 text-accent" />
-                  <span>PayPal</span>
-                </div>
               </div>
               <div className="space-y-3">
                 <h4 className="font-semibold text-lg mb-3">Otros Métodos</h4>
