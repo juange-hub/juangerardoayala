@@ -14,9 +14,9 @@ export const Bio = () => {
       description: "Artista para la Paz 2016-2018"
     },
     {
-      icon: Music,
-      title: "Triple Solista",
-      description: "OSN, OSCA y Orquesta de Cámara Municipal"
+      icon: Calendar,
+      title: "+20 Años",
+      description: "Trayectoria profesional desde 2004"
     }
   ];
 
