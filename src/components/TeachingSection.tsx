@@ -111,7 +111,7 @@ export const TeachingSection = () => {
                       onClick={handleScheduleClass}
                       className="w-full"
                     >
-                      Agendar Clase Experimental
+                      Descubrí Tu Clase Ideal
                     </Button>
                   </div>
                 </div>
@@ -126,10 +126,10 @@ export const TeachingSection = () => {
             onClick={handleScheduleClass}
             className="text-lg px-8 py-6 rounded-full shadow-lg hover:shadow-xl transition-all"
           >
-            Agendar Clase de Prueba Gratuita
+            Descubrí Tu Clase Ideal
           </Button>
           <p className="mt-4 text-sm text-muted-foreground">
-            Sin compromiso • Primera clase sin costo
+            Encontrá la modalidad perfecta para vos
           </p>
         </div>
       </div>
