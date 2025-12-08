@@ -3,28 +3,58 @@ import { Card } from "@/components/ui/card";
 export const Experience = () => {
   const timeline = [
     {
-      year: "2020 - Presente",
-      title: "Director de Orquesta y Pedagogo",
-      institution: "Proyectos Orquestales y Academia Musical",
-      description: "Dirección de agrupaciones sinfónicas y formación de flautistas profesionales"
+      year: "2014 - Actualmente",
+      title: "1° Flauta Solista",
+      institution: "Orquesta Sinfónica Nacional del Paraguay (OSN)",
+      description: "Músico flautista, primera flauta solista de la orquesta sinfónica nacional."
     },
     {
-      year: "2015 - Presente",
-      title: "Solista de Flauta",
-      institution: "Orquestas Sinfónicas",
-      description: "Actuación como solista principal en orquestas sinfónicas reconocidas"
+      year: "2013 - Actualmente",
+      title: "1° Flauta Solista",
+      institution: "Orquesta Sinfónica de la Ciudad de Asunción (OSCA)",
+      description: "Músico flautista, primera flauta solista de la orquesta sinfónica municipal."
     },
     {
-      year: "2010 - 2020",
-      title: "Flautista Principal",
-      institution: "Orquestas Sinfónicas Profesionales",
-      description: "Primera flauta en temporadas regulares, conciertos y giras"
+      year: "2013 - Actualmente",
+      title: "1° Flauta Solista",
+      institution: "Orquesta de Cámara Municipal de Asunción (OCMA)",
+      description: "Músico flautista, primera flauta solista de la orquesta de cámara municipal."
     },
     {
-      year: "2005 - 2010",
-      title: "Formación Profesional",
-      institution: "Conservatorio Superior",
-      description: "Estudios especializados en flauta y dirección orquestal"
+      year: "2021 - Actualmente",
+      title: "Secretario General",
+      institution: "Sindicato de Músicos de la Sinfónica y Cámara de Asunción (SIMUSICA)",
+      description: "Secretario General del sindicato. Periodo 2021-2023 y reelecto para 2023-2025."
+    },
+    {
+      year: "2018 - Actualmente",
+      title: "Director Invitado",
+      institution: "Orquesta de Cámara Municipal de Asunción (OCMA)",
+      description: "Director invitado en repetidas ocasiones, dirigiendo solistas y obras de cámara."
+    },
+    {
+      year: "2021 - 2022",
+      title: "Profesor de Flauta Traversa",
+      institution: "Universidad Nacional de Asunción (UNA)",
+      description: "Profesor de la cátedra de Flauta Traversa de la carrera de Licenciatura en Música."
+    },
+    {
+      year: "2011 - 2012",
+      title: "Músico Invitado",
+      institution: "Orquesta Sinfónica del Congreso Nacional (OSIC)",
+      description: "Músico invitado como segundo o tercer flautista y piccolista."
+    },
+    {
+      year: "2010 - 2011",
+      title: "Profesor de Música",
+      institution: "ÑEMITY - Secretaría Nacional de la Niñez y la Adolescencia",
+      description: "Centro de aprendizaje Psico Social para Niños/as y Adolescentes con experiencia de vida en calle."
+    },
+    {
+      year: "2009 - 2010",
+      title: "Flautista y Piccolista",
+      institution: "Orquesta Sinfónica de la Universidad del Norte (UNINORTE)",
+      description: "Músico invitado como tercer flautista y piccolista."
     }
   ];
 
