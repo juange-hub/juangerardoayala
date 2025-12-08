@@ -21,7 +21,7 @@ export const Experience = () => {
       description: "Músico flautista, primera flauta solista de la orquesta de cámara municipal."
     },
     {
-      year: "2021 - Actualmente",
+      year: "2021 - 2025",
       title: "Secretario General",
       institution: "Sindicato de Músicos de la Sinfónica y Cámara de Asunción (SIMUSICA)",
       description: "Secretario General del sindicato. Periodo 2021-2023 y reelecto para 2023-2025."
