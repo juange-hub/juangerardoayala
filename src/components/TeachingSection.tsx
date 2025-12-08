@@ -11,7 +11,7 @@ const levels = [
   {
     icon: GraduationCap,
     title: "Estudiantes Avanzados",
-    description: "Preparación para conservatorios, audiciones y concursos internacionales"
+    description: "Preparación para conservatorios, audiciones y concursos"
   },
   {
     icon: Sparkles,
@@ -37,7 +37,7 @@ const modalities = [
 
 export const TeachingSection = () => {
   const handleScheduleClass = () => {
-    const classesSection = document.getElementById('classes');
+    const classesSection = document.getElementById('clases');
     if (classesSection) {
       classesSection.scrollIntoView({ behavior: 'smooth' });
     }
