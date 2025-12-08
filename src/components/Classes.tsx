@@ -107,10 +107,6 @@ export const Classes = () => {
                 <h4 className="font-semibold text-lg mb-3">Pagos en Línea</h4>
                 <div className="flex items-center gap-2 text-muted-foreground">
                   <Check className="w-5 h-5 text-accent" />
-                  <span>Tarjetas de crédito/débito</span>
-                </div>
-                <div className="flex items-center gap-2 text-muted-foreground">
-                  <Check className="w-5 h-5 text-accent" />
                   <span>Transferencia bancaria</span>
                 </div>
               </div>
