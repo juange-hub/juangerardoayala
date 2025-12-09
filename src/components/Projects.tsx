@@ -16,7 +16,12 @@ const projects = [
       "Programa dedicado a la flauta traversa"
     ],
     tags: ["Concierto", "Flauta Traversa", "Gratuito"],
-    videos: []
+    videos: [
+      {
+        title: "Ver Concierto Completo",
+        url: "https://youtu.be/lMQGHmaM0J8"
+      }
+    ]
   },
   {
     title: "Proyecto 2 - Por definir",
