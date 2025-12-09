@@ -85,7 +85,7 @@ export const Projects = () => {
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Festivales y masterclasses que han impulsado la formación de flautistas
-            y promovido el intercambio cultural internacional
+            y promovido el intercambio cultural nacional e internacional
           </p>
         </div>
 
