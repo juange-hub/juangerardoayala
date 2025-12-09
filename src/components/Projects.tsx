@@ -16,12 +16,8 @@ const projects = [
       "Programa dedicado a la flauta traversa"
     ],
     tags: ["Concierto", "Flauta Traversa", "Gratuito"],
-    videos: [
-      {
-        title: "Ver Concierto Completo",
-        url: "https://youtu.be/lMQGHmaM0J8"
-      }
-    ]
+    youtubeId: "lMQGHmaM0J8",
+    videos: []
   },
   {
     title: "Proyecto 2 - Por definir",
@@ -70,16 +66,31 @@ export const Projects = () => {
               className="overflow-hidden hover:shadow-lg transition-all duration-300 border-border/50 bg-card"
               style={{ animationDelay: `${index * 100}ms` }}
             >
-              <div className="relative h-48 bg-muted overflow-hidden">
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
-                />
-                <div className="absolute top-4 right-4 bg-primary text-primary-foreground px-3 py-1 rounded-full text-sm font-semibold">
-                  {project.year}
+              {project.youtubeId ? (
+                <div className="relative h-48 bg-muted overflow-hidden">
+                  <iframe
+                    src={`https://www.youtube.com/embed/${project.youtubeId}`}
+                    title={project.title}
+                    className="w-full h-full"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  />
+                  <div className="absolute top-2 right-2 bg-primary text-primary-foreground px-3 py-1 rounded-full text-sm font-semibold">
+                    {project.year}
+                  </div>
                 </div>
-              </div>
+              ) : (
+                <div className="relative h-48 bg-muted overflow-hidden">
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+                  />
+                  <div className="absolute top-4 right-4 bg-primary text-primary-foreground px-3 py-1 rounded-full text-sm font-semibold">
+                    {project.year}
+                  </div>
+                </div>
+              )}
 
               <CardHeader>
                 <CardTitle className="text-xl mb-2">{project.title}</CardTitle>
