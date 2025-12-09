@@ -17,6 +17,30 @@ const projects = [
     ],
     tags: ["Concierto", "Flauta Traversa", "Gratuito"],
     videos: []
+  },
+  {
+    title: "Proyecto 2 - Por definir",
+    year: "2023",
+    location: "Lugar por definir",
+    image: "/placeholder.svg",
+    description: "Descripción del proyecto pendiente de actualizar.",
+    impact: [
+      "Impacto por definir"
+    ],
+    tags: ["Pendiente"],
+    videos: []
+  },
+  {
+    title: "Proyecto 3 - Por definir",
+    year: "2022",
+    location: "Lugar por definir",
+    image: "/placeholder.svg",
+    description: "Descripción del proyecto pendiente de actualizar.",
+    impact: [
+      "Impacto por definir"
+    ],
+    tags: ["Pendiente"],
+    videos: []
   }
 ];
 
