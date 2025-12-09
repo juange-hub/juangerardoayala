@@ -15,8 +15,8 @@ export const Bio = () => {
     },
     {
       icon: Calendar,
-      title: "+20 Años",
-      description: "Trayectoria profesional desde 2004"
+      title: "+15 Años",
+      description: "Trayectoria profesional"
     }
   ];
 
