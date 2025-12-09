@@ -9,7 +9,7 @@ const projects = [
     year: "Mayo 2021",
     location: "Teatro Municipal de Asunción Ignacio A. Pane",
     image: "/placeholder.svg",
-    description: "Flautistas Paraguayos con la Orquesta de Cámara Municipal de Asunción. Director: Miguel Ángel Echeverría. Director invitado: Juan Gerardo Ayala. Coordinación general: Juan Gerardo Ayala.",
+    description: "Flautistas Paraguayos con la Orquesta de Cámara Municipal de Asunción. Director: Miguel Ángel Echeverría. Director invitado: Juan Gerardo Ayala. Coordinación general: Juan Gerardo Ayala, con el apoyo de la Sociedad Filarmónica de Asunción y del Maestro Miguel Ángel Echeverría.",
     impact: [
       "1 concierto público gratuito",
       "Solistas invitados de distintas regiones del Paraguay",
