@@ -5,73 +5,18 @@ import { Users, MapPin, Calendar, Target, Youtube, ExternalLink } from "lucide-r
 
 const projects = [
   {
-    title: "Festival Internacional de Flauta Traversa",
-    year: "2023",
-    location: "Teatro Principal",
+    title: "Concierto de la Gran Flauta",
+    year: "2024",
+    location: "Teatro Municipal de Asunción Ignacio A. Pane",
     image: "/placeholder.svg",
-    description: "Festival anual que reúne a flautistas de nivel internacional para masterclasses, conciertos y talleres especializados.",
+    description: "Concierto coordinado gracias al apoyo del Director de la Orquesta de Cámara Municipal de Asunción, Miguel Ángel Echeverría, y la Sociedad Filarmónica de Asunción. Un programa dedicado a la flauta traversa, con invitados de varios rincones del Paraguay.",
     impact: [
-      "150+ participantes de 8 países",
-      "12 masterclasses con artistas internacionales",
-      "5 conciertos públicos gratuitos"
+      "1 concierto público gratuito",
+      "Invitados de distintas regiones del Paraguay",
+      "Programa dedicado a la flauta traversa"
     ],
-    tags: ["Festival", "Internacional", "Masterclass"],
-    videos: [
-      {
-        title: "Concierto de Apertura",
-        url: "https://youtube.com/watch?v=example1"
-      },
-      {
-        title: "Masterclass con Emmanuel Pahud",
-        url: "https://youtube.com/watch?v=example2"
-      }
-    ]
-  },
-  {
-    title: "Encuentro de Flauta Latinoamericana",
-    year: "2022",
-    location: "Conservatorio Nacional",
-    image: "/placeholder.svg",
-    description: "Encuentro enfocado en la música latinoamericana para flauta traversa, con invitados especiales de Argentina, Brasil y México.",
-    impact: [
-      "80+ estudiantes y profesionales",
-      "8 talleres especializados",
-      "3 conciertos temáticos"
-    ],
-    tags: ["Latinoamérica", "Educación", "Cultura"],
-    videos: [
-      {
-        title: "Taller de Música Folclórica",
-        url: "https://youtube.com/watch?v=example3"
-      },
-      {
-        title: "Concierto Final",
-        url: "https://youtube.com/watch?v=example4"
-      }
-    ]
-  },
-  {
-    title: "Masterclass con Solistas Europeos",
-    year: "2021",
-    location: "Sala de Cámara",
-    image: "/placeholder.svg",
-    description: "Serie de masterclasses con solistas de las principales orquestas sinfónicas de Europa, enfocadas en repertorio orquestal y de cámara.",
-    impact: [
-      "50+ flautistas profesionales",
-      "10 sesiones intensivas",
-      "Repertorio orquestal y contemporáneo"
-    ],
-    tags: ["Masterclass", "Europa", "Profesional"],
-    videos: [
-      {
-        title: "Masterclass Repertorio Orquestal",
-        url: "https://youtube.com/watch?v=example5"
-      },
-      {
-        title: "Técnica Avanzada",
-        url: "https://youtube.com/watch?v=example6"
-      }
-    ]
+    tags: ["Concierto", "Flauta Traversa", "Gratuito"],
+    videos: []
   }
 ];
 
