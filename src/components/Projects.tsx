@@ -6,7 +6,7 @@ import { Users, MapPin, Calendar, Target, Youtube, ExternalLink } from "lucide-r
 const projects = [
   {
     title: "Concierto de la Gran Flauta",
-    year: "2024",
+    year: "Mayo 2021",
     location: "Teatro Municipal de Asunción Ignacio A. Pane",
     image: "/placeholder.svg",
     description: "Flautistas Paraguayos con la Orquesta de Cámara Municipal de Asunción. Director: Miguel Ángel Echeverría. Director invitado: Juan Gerardo Ayala. Coordinación general: Juan Gerardo Ayala.",
