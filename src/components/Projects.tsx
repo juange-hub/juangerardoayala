@@ -9,10 +9,10 @@ const projects = [
     year: "2024",
     location: "Teatro Municipal de Asunción Ignacio A. Pane",
     image: "/placeholder.svg",
-    description: "Concierto coordinado gracias al apoyo del Director de la Orquesta de Cámara Municipal de Asunción, Miguel Ángel Echeverría, y la Sociedad Filarmónica de Asunción. Un programa dedicado a la flauta traversa, con invitados de varios rincones del Paraguay.",
+    description: "Flautistas Paraguayos con la Orquesta de Cámara Municipal de Asunción. Director: Miguel Ángel Echeverría. Director invitado: Juan Gerardo Ayala. Coordinación general: Juan Gerardo Ayala.",
     impact: [
       "1 concierto público gratuito",
-      "Invitados de distintas regiones del Paraguay",
+      "Solistas invitados de distintas regiones del Paraguay",
       "Programa dedicado a la flauta traversa"
     ],
     tags: ["Concierto", "Flauta Traversa", "Gratuito"],
