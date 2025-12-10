@@ -1,7 +1,7 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { Users, MapPin, Calendar, Target, Youtube, ExternalLink } from "lucide-react";
+import { Users, MapPin, Calendar, Target, Youtube, ExternalLink, Instagram } from "lucide-react";
 
 const projects = [
   {
@@ -20,15 +20,19 @@ const projects = [
     videos: []
   },
   {
-    title: "Proyecto 2 - Por definir",
-    year: "2023",
-    location: "Lugar por definir",
+    title: "Jornadas de Flauta Traversa e Instrumentos de Viento Madera",
+    year: "Agosto 2025",
+    location: "Asunción, Paraguay",
     image: "/placeholder.svg",
-    description: "Descripción del proyecto pendiente de actualizar.",
+    description: "Charlas y clases magistrales a cargo del Flautista Jorge de la Vega (Argentina). Talleres de mantenimiento básico para flauta traversa e instrumentos de madera dictado por el Lic. Adriano Calcagno (Mendoza, Argentina). Colaborando a la formación de instrumentistas, luthieres e interesados en el mundo de la reparación y mantenimiento de instrumentos.",
     impact: [
-      "Impacto por definir"
+      "Formación de instrumentistas y luthieres",
+      "Intercambio internacional con maestros argentinos",
+      "Talleres prácticos de mantenimiento instrumental"
     ],
-    tags: ["Pendiente"],
+    tags: ["Masterclass", "Taller", "Viento Madera"],
+    instagramReelUrl: "",
+    sponsors: ["Powell Flutes", "Orquesta Sinfónica Nacional del Paraguay"],
     videos: []
   },
   {
@@ -127,6 +131,37 @@ export const Projects = () => {
                     </Badge>
                   ))}
                 </div>
+
+                {project.sponsors && project.sponsors.length > 0 && (
+                  <div className="pt-2">
+                    <p className="text-xs text-muted-foreground">
+                      <span className="font-semibold">Con el apoyo de:</span> {project.sponsors.join(", ")}
+                    </p>
+                  </div>
+                )}
+
+                {project.instagramReelUrl !== undefined && (
+                  <div className="pt-4 border-t border-border">
+                    <a
+                      href={project.instagramReelUrl || "#"}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={`flex items-center gap-2 p-2 rounded-md transition-colors ${
+                        project.instagramReelUrl 
+                          ? "hover:bg-muted/50 group cursor-pointer" 
+                          : "opacity-50 cursor-not-allowed"
+                      }`}
+                    >
+                      <Instagram className="w-4 h-4 text-pink-600" />
+                      <span className="text-sm text-muted-foreground group-hover:text-foreground transition-colors">
+                        {project.instagramReelUrl ? "Ver Reel en Instagram" : "Reel próximamente"}
+                      </span>
+                      {project.instagramReelUrl && (
+                        <ExternalLink className="w-4 h-4 text-muted-foreground group-hover:text-primary transition-colors ml-auto" />
+                      )}
+                    </a>
+                  </div>
+                )}
 
                 {project.videos && project.videos.length > 0 && (
                   <div className="pt-4 border-t border-border">
