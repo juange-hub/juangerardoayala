@@ -40,13 +40,15 @@ const projects = [
     year: "Mayo 2018",
     location: "Asunción, Paraguay",
     image: "/placeholder.svg",
-    description: "Clases magistrales con el reconocido flautista francés Matthieu Gauci-Ancelin, radicado en Berlín. Coordinación: Juan Gerardo Ayala.",
+    description: "Clases magistrales con el reconocido flautista francés Matthieu Gauci-Ancelin, radicado en Berlín. Coordinación: Juan Gerardo Ayala. Las clases magistrales fueron gratuitas para los estudiantes gracias al apoyo obtenido.",
     impact: [
       "+20 flautistas beneficiados",
       "8 alumnos activos participantes",
+      "1 concierto público gratuito",
+      "Clases magistrales gratuitas para estudiantes",
       "Intercambio cultural internacional Francia-Alemania-Paraguay"
     ],
-    tags: ["Masterclass", "Flauta Traversa", "Internacional"],
+    tags: ["Masterclass", "Flauta Traversa", "Internacional", "Gratuito"],
     youtubeUrl: "https://youtu.be/Hsa-rCzW_eE",
     sponsors: ["Sociedad Filarmónica de Asunción", "Instituto Cultural Paraguayo Alemán", "Embajada de Alemania en Paraguay"],
     videos: []
@@ -225,10 +227,15 @@ export const Projects = () => {
               <h3 className="text-2xl font-bold mb-4 text-foreground">
                 ¿Interesado en colaborar?
               </h3>
+              <p className="text-muted-foreground mb-4">
+                Estos proyectos buscan dar oportunidades a jóvenes estudiantes, elevar el nivel flautístico
+                del país y llegar a quienes no pueden acceder fácilmente a formación de calidad.
+              </p>
               <p className="text-muted-foreground mb-6">
-                Estos proyectos son posibles gracias al apoyo de empresas, instituciones culturales
-                y el gobierno. Si deseas ser parte de futuras ediciones o crear nuevos proyectos,
-                contáctame para explorar oportunidades de colaboración.
+                Tu apoyo es fundamental para democratizar el acceso a la educación musical y beneficiar
+                a quienes no pueden costear clases con maestros internacionales. Gracias al respaldo de
+                empresas, instituciones culturales y el gobierno, hemos logrado ofrecer clases y conciertos
+                gratuitos. Si deseas ser parte de futuras ediciones, contáctame para explorar oportunidades de colaboración.
               </p>
               <div className="flex flex-wrap justify-center gap-4 text-sm text-muted-foreground">
                 <div className="flex items-center gap-2">
