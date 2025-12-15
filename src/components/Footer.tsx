@@ -22,9 +22,9 @@ export const Footer = () => {
                 <Mail className="w-5 h-5" />
                 <span>contacto@clasesmusica.com</span>
               </a>
-              <a href="tel:+1234567890" className="flex items-center gap-2 text-primary-foreground/80 hover:text-accent transition-[var(--transition-smooth)]">
+              <a href="tel:+595971664878" className="flex items-center gap-2 text-primary-foreground/80 hover:text-accent transition-[var(--transition-smooth)]">
                 <Phone className="w-5 h-5" />
-                <span>+1 (234) 567-890</span>
+                <span>+595 971 664878</span>
               </a>
               <div className="flex items-start gap-2 text-primary-foreground/80">
                 <MapPin className="w-5 h-5 flex-shrink-0 mt-0.5" />

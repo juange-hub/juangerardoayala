@@ -218,7 +218,7 @@ export const Projects = () => {
               <div className="flex flex-wrap justify-center gap-4 mb-6">
                 <Button asChild className="gap-2">
                   <a 
-                    href="https://wa.me/595981123456?text=Hola%2C%20me%20interesa%20colaborar%20con%20los%20proyectos%20musicales" 
+                    href="https://wa.me/595971664878?text=Hola%2C%20me%20interesa%20colaborar%20con%20los%20proyectos%20musicales" 
                     target="_blank" 
                     rel="noopener noreferrer"
                   >
@@ -227,7 +227,7 @@ export const Projects = () => {
                   </a>
                 </Button>
                 <Button asChild variant="outline" className="gap-2">
-                  <a href="mailto:juangerardoayala@gmail.com?subject=Colaboración%20-%20Proyectos%20Musicales">
+                  <a href="mailto:juanayalaflute@gmail.com?subject=Colaboración%20-%20Proyectos%20Musicales">
                     <Mail className="w-5 h-5" />
                     Enviar Email
                   </a>

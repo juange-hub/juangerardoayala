@@ -25,13 +25,13 @@ const modalities = [
     icon: MapPin,
     title: "Clases Presenciales",
     description: "Clases en local propio o a domicilio del alumno. Experiencia personalizada y seguimiento directo.",
-    phone: "+595 981 123456"
+    phone: "+595 971 664878"
   },
   {
     icon: Video,
     title: "Clases Online",
     description: "Clases virtuales para mayor flexibilidad. Disponible para todos los niveles.",
-    phone: "+595 981 123456"
+    phone: "+595 971 664878"
   }
 ];
 
