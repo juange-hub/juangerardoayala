@@ -37,14 +37,14 @@ const projects = [
   },
   {
     title: "Clases Magistrales con Matthieu Gauci-Ancelin",
-    year: "2023",
+    year: "Mayo 2018",
     location: "Asunción, Paraguay",
     image: "/placeholder.svg",
-    description: "Clases magistrales con el reconocido flautista francés Matthieu Gauci-Ancelin. Coordinación: Juan Gerardo Ayala.",
+    description: "Clases magistrales con el reconocido flautista francés Matthieu Gauci-Ancelin, radicado en Berlín. Coordinación: Juan Gerardo Ayala.",
     impact: [
       "+20 flautistas beneficiados",
       "8 alumnos activos participantes",
-      "Intercambio cultural internacional Francia-Paraguay"
+      "Intercambio cultural internacional Francia-Alemania-Paraguay"
     ],
     tags: ["Masterclass", "Flauta Traversa", "Internacional"],
     youtubeUrl: "",
