@@ -36,15 +36,19 @@ const projects = [
     videos: []
   },
   {
-    title: "Proyecto 3 - Por definir",
-    year: "2022",
-    location: "Lugar por definir",
+    title: "Clases Magistrales con Matthieu Gauci-Ancelin",
+    year: "2023",
+    location: "Asunción, Paraguay",
     image: "/placeholder.svg",
-    description: "Descripción del proyecto pendiente de actualizar.",
+    description: "Clases magistrales con el reconocido flautista francés Matthieu Gauci-Ancelin. Coordinación: Juan Gerardo Ayala.",
     impact: [
-      "Impacto por definir"
+      "+20 flautistas beneficiados",
+      "8 alumnos activos participantes",
+      "Intercambio cultural internacional Francia-Paraguay"
     ],
-    tags: ["Pendiente"],
+    tags: ["Masterclass", "Flauta Traversa", "Internacional"],
+    youtubeUrl: "",
+    sponsors: ["Sociedad Filarmónica de Asunción", "Instituto Cultural Paraguayo Alemán", "Embajada de Alemania en Paraguay"],
     videos: []
   }
 ];
@@ -157,6 +161,29 @@ export const Projects = () => {
                         {project.instagramReelUrl ? "Ver Reel en Instagram" : "Reel próximamente"}
                       </span>
                       {project.instagramReelUrl && (
+                        <ExternalLink className="w-4 h-4 text-muted-foreground group-hover:text-primary transition-colors ml-auto" />
+                      )}
+                    </a>
+                  </div>
+                )}
+
+                {project.youtubeUrl !== undefined && (
+                  <div className="pt-4 border-t border-border">
+                    <a
+                      href={project.youtubeUrl || "#"}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={`flex items-center gap-2 p-2 rounded-md transition-colors ${
+                        project.youtubeUrl 
+                          ? "hover:bg-muted/50 group cursor-pointer" 
+                          : "opacity-50 cursor-not-allowed"
+                      }`}
+                    >
+                      <Youtube className="w-4 h-4 text-red-600" />
+                      <span className="text-sm text-muted-foreground group-hover:text-foreground transition-colors">
+                        {project.youtubeUrl ? "Ver en YouTube" : "Video próximamente"}
+                      </span>
+                      {project.youtubeUrl && (
                         <ExternalLink className="w-4 h-4 text-muted-foreground group-hover:text-primary transition-colors ml-auto" />
                       )}
                     </a>
