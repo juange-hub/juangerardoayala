@@ -47,7 +47,7 @@ const projects = [
       "Intercambio cultural internacional Francia-Alemania-Paraguay"
     ],
     tags: ["Masterclass", "Flauta Traversa", "Internacional"],
-    youtubeUrl: "",
+    youtubeUrl: "https://youtu.be/Hsa-rCzW_eE",
     sponsors: ["Sociedad Filarmónica de Asunción", "Instituto Cultural Paraguayo Alemán", "Embajada de Alemania en Paraguay"],
     videos: []
   }
