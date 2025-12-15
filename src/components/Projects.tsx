@@ -1,7 +1,7 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { Users, MapPin, Calendar, Target, Youtube, ExternalLink, Instagram } from "lucide-react";
+import { Users, MapPin, Calendar, Target, Youtube, ExternalLink, Instagram, MessageCircle, Mail } from "lucide-react";
 
 const projects = [
   {
@@ -215,6 +215,24 @@ export const Projects = () => {
                 empresas, instituciones culturales y el gobierno, hemos logrado ofrecer clases y conciertos
                 gratuitos. Si deseas ser parte de futuras ediciones, contáctame para explorar oportunidades de colaboración.
               </p>
+              <div className="flex flex-wrap justify-center gap-4 mb-6">
+                <Button asChild className="gap-2">
+                  <a 
+                    href="https://wa.me/595981123456?text=Hola%2C%20me%20interesa%20colaborar%20con%20los%20proyectos%20musicales" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                  >
+                    <MessageCircle className="w-5 h-5" />
+                    WhatsApp
+                  </a>
+                </Button>
+                <Button asChild variant="outline" className="gap-2">
+                  <a href="mailto:juangerardoayala@gmail.com?subject=Colaboración%20-%20Proyectos%20Musicales">
+                    <Mail className="w-5 h-5" />
+                    Enviar Email
+                  </a>
+                </Button>
+              </div>
               <div className="flex flex-wrap justify-center gap-4 text-sm text-muted-foreground">
                 <div className="flex items-center gap-2">
                   <Users className="w-4 h-4 text-primary" />
