@@ -49,7 +49,7 @@ const projects = [
       "Intercambio cultural internacional Francia-Alemania-Paraguay"
     ],
     tags: ["Masterclass", "Flauta Traversa", "Internacional", "Gratuito"],
-    youtubeUrl: "https://youtu.be/Hsa-rCzW_eE",
+    youtubeId: "Hsa-rCzW_eE",
     sponsors: ["Sociedad Filarmónica de Asunción", "Instituto Cultural Paraguayo Alemán", "Embajada de Alemania en Paraguay"],
     videos: []
   }
@@ -169,28 +169,6 @@ export const Projects = () => {
                   </div>
                 )}
 
-                {project.youtubeUrl !== undefined && (
-                  <div className="pt-4 border-t border-border">
-                    <a
-                      href={project.youtubeUrl || "#"}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className={`flex items-center gap-2 p-2 rounded-md transition-colors ${
-                        project.youtubeUrl 
-                          ? "hover:bg-muted/50 group cursor-pointer" 
-                          : "opacity-50 cursor-not-allowed"
-                      }`}
-                    >
-                      <Youtube className="w-4 h-4 text-red-600" />
-                      <span className="text-sm text-muted-foreground group-hover:text-foreground transition-colors">
-                        {project.youtubeUrl ? "Ver en YouTube" : "Video próximamente"}
-                      </span>
-                      {project.youtubeUrl && (
-                        <ExternalLink className="w-4 h-4 text-muted-foreground group-hover:text-primary transition-colors ml-auto" />
-                      )}
-                    </a>
-                  </div>
-                )}
 
                 {project.videos && project.videos.length > 0 && (
                   <div className="pt-4 border-t border-border">
