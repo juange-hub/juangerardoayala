@@ -5,21 +5,6 @@ import { Users, MapPin, Calendar, Target, Youtube, ExternalLink, Instagram } fro
 
 const projects = [
   {
-    title: "Concierto de la Gran Flauta",
-    year: "Mayo 2021",
-    location: "Teatro Municipal de Asunción Ignacio A. Pane",
-    image: "/placeholder.svg",
-    description: "Flautistas Paraguayos con la Orquesta de Cámara Municipal de Asunción. Director: Miguel Ángel Echeverría. Director invitado: Juan Gerardo Ayala. Coordinación general: Juan Gerardo Ayala, con el apoyo de la Sociedad Filarmónica de Asunción y del Maestro Miguel Ángel Echeverría.",
-    impact: [
-      "1 concierto público gratuito",
-      "Solistas invitados de distintas regiones del Paraguay",
-      "Programa dedicado a la flauta traversa"
-    ],
-    tags: ["Concierto", "Flauta Traversa", "Gratuito"],
-    youtubeId: "lMQGHmaM0J8",
-    videos: []
-  },
-  {
     title: "Jornadas de Flauta Traversa e Instrumentos de Viento Madera",
     year: "Agosto 2025",
     location: "Asunción, Paraguay",
@@ -33,6 +18,21 @@ const projects = [
     tags: ["Masterclass", "Taller", "Viento Madera"],
     instagramReelUrl: "https://www.instagram.com/reel/DOO6u_qCY7T/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
     sponsors: ["Powell Flutes", "Orquesta Sinfónica Nacional del Paraguay"],
+    videos: []
+  },
+  {
+    title: "Concierto de la Gran Flauta",
+    year: "Mayo 2021",
+    location: "Teatro Municipal de Asunción Ignacio A. Pane",
+    image: "/placeholder.svg",
+    description: "Flautistas Paraguayos con la Orquesta de Cámara Municipal de Asunción. Director: Miguel Ángel Echeverría. Director invitado: Juan Gerardo Ayala. Coordinación general: Juan Gerardo Ayala, con el apoyo de la Sociedad Filarmónica de Asunción y del Maestro Miguel Ángel Echeverría.",
+    impact: [
+      "1 concierto público gratuito",
+      "Solistas invitados de distintas regiones del Paraguay",
+      "Programa dedicado a la flauta traversa"
+    ],
+    tags: ["Concierto", "Flauta Traversa", "Gratuito"],
+    youtubeId: "lMQGHmaM0J8",
     videos: []
   },
   {
