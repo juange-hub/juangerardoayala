@@ -34,12 +34,13 @@ export const Classes = () => {
     },
     {
       name: "Programa Intensivo",
-      priceUSD: "$190",
-      priceGS: "Gs. 1.100.000",
-      duration: "8 clases / mes",
+      priceUSD: "$140",
+      priceGS: "Gs. 850.000",
+      duration: "6 clases / 2 meses",
+      badge: "Enero - Febrero 2026",
       features: [
-        "Ahorra $50 por mes",
-        "2 clases semanales intensivas",
+        "Ahorra más de $40 en total",
+        "3 clases mensuales intensivas",
         "Preparación para audiciones",
         "Material premium incluido",
         "Acceso a recursos online",
@@ -70,6 +71,11 @@ export const Classes = () => {
               {pkg.popular && (
                 <Badge className="absolute -top-3 left-1/2 -translate-x-1/2 bg-accent text-accent-foreground">
                   Más Popular
+                </Badge>
+              )}
+              {pkg.badge && (
+                <Badge className="absolute -top-3 left-1/2 -translate-x-1/2 bg-primary text-primary-foreground">
+                  {pkg.badge}
                 </Badge>
               )}
               <div className="text-center mb-6">
