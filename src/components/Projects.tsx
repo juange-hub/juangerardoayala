@@ -1,14 +1,15 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { Users, MapPin, Calendar, Target, Youtube, ExternalLink, Instagram, MessageCircle, Mail } from "lucide-react";
+import { Users, MapPin, Calendar, Target, Youtube, ExternalLink, MessageCircle, Mail } from "lucide-react";
+import jornadasFlautaImg from "@/assets/jornadas-flauta.jpg";
 
 const projects = [
   {
     title: "Jornadas de Flauta Traversa e Instrumentos de Viento Madera",
     year: "Agosto 2025",
     location: "Asunción, Paraguay",
-    image: "/placeholder.svg",
+    image: jornadasFlautaImg,
     description: "Charlas y clases magistrales a cargo del Flautista Jorge de la Vega (Argentina). Talleres de mantenimiento básico para flauta traversa e instrumentos de madera dictado por el Lic. Adriano Calcagno (Mendoza, Argentina). Colaborando a la formación de instrumentistas, luthieres e interesados en el mundo de la reparación y mantenimiento de instrumentos.",
     impact: [
       "Formación de instrumentistas y luthieres",
@@ -16,7 +17,6 @@ const projects = [
       "Talleres prácticos de mantenimiento instrumental"
     ],
     tags: ["Masterclass", "Taller", "Viento Madera"],
-    instagramReelUrl: "https://www.instagram.com/reel/DOO6u_qCY7T/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
     sponsors: ["Powell Flutes", "Orquesta Sinfónica Nacional del Paraguay"],
     videos: []
   },
@@ -146,28 +146,6 @@ export const Projects = () => {
                   </div>
                 )}
 
-                {project.instagramReelUrl !== undefined && (
-                  <div className="pt-4 border-t border-border">
-                    <a
-                      href={project.instagramReelUrl || "#"}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className={`flex items-center gap-2 p-2 rounded-md transition-colors ${
-                        project.instagramReelUrl 
-                          ? "hover:bg-muted/50 group cursor-pointer" 
-                          : "opacity-50 cursor-not-allowed"
-                      }`}
-                    >
-                      <Instagram className="w-4 h-4 text-pink-600" />
-                      <span className="text-sm text-muted-foreground group-hover:text-foreground transition-colors">
-                        {project.instagramReelUrl ? "Ver Reel en Instagram" : "Reel próximamente"}
-                      </span>
-                      {project.instagramReelUrl && (
-                        <ExternalLink className="w-4 h-4 text-muted-foreground group-hover:text-primary transition-colors ml-auto" />
-                      )}
-                    </a>
-                  </div>
-                )}
 
 
                 {project.videos && project.videos.length > 0 && (
