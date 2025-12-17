@@ -7,7 +7,8 @@ export const Classes = () => {
   const packages = [
     {
       name: "Clase Individual",
-      price: "$50",
+      priceUSD: "$30",
+      priceGS: "Gs. 230.000",
       duration: "por sesión de 60 min",
       features: [
         "Atención personalizada en flauta",
@@ -19,7 +20,8 @@ export const Classes = () => {
     },
     {
       name: "Paquete Mensual",
-      price: "$180",
+      priceUSD: "$100",
+      priceGS: "Gs. 600.000",
       duration: "4 clases / mes",
       features: [
         "Ahorra $20 por mes",
@@ -32,7 +34,8 @@ export const Classes = () => {
     },
     {
       name: "Programa Intensivo",
-      price: "$350",
+      priceUSD: "$190",
+      priceGS: "Gs. 1.100.000",
       duration: "8 clases / mes",
       features: [
         "Ahorra $50 por mes",
@@ -71,10 +74,11 @@ export const Classes = () => {
               )}
               <div className="text-center mb-6">
                 <h3 className="text-2xl font-bold mb-2">{pkg.name}</h3>
-                <div className="mb-2">
-                  <span className="text-4xl font-bold text-accent">{pkg.price}</span>
+                <div className="mb-1">
+                  <span className="text-4xl font-bold text-accent">{pkg.priceUSD}</span>
                 </div>
-                <p className="text-sm text-muted-foreground">{pkg.duration}</p>
+                <p className="text-sm text-muted-foreground mb-1">o {pkg.priceGS} en Paraguay</p>
+                <p className="text-xs text-muted-foreground">{pkg.duration}</p>
               </div>
               
               <ul className="space-y-3 mb-8">
