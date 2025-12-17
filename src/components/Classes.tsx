@@ -7,8 +7,8 @@ export const Classes = () => {
   const packages = [
     {
       name: "Clase Individual",
-      priceUSD: "$30",
-      priceGS: "Gs. 230.000",
+      priceUSD: "$25",
+      priceGS: "Gs. 170.000",
       duration: "por sesión de 60 min",
       features: [
         "Atención personalizada en flauta",
