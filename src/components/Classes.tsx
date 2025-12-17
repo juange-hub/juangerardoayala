@@ -24,7 +24,7 @@ export const Classes = () => {
       priceGS: "Gs. 600.000",
       duration: "4 clases / mes",
       features: [
-        "Ahorra $20 por mes",
+        "Ahorrás Gs. 80.000 por mes",
         "Clases semanales de flauta",
         "Seguimiento continuo de progreso",
         "Material de estudio incluido",
@@ -39,7 +39,7 @@ export const Classes = () => {
       duration: "6 clases / 2 meses",
       badge: "Enero - Febrero 2026",
       features: [
-        "Ahorra más de $40 en total",
+        "Ahorrás Gs. 170.000 en total",
         "3 clases mensuales intensivas",
         "Preparación para audiciones",
         "Material premium incluido",
