@@ -3,6 +3,24 @@ import { Card } from "@/components/ui/card";
 export const Experience = () => {
   const timeline = [
     {
+      year: "2021 - 2025",
+      title: "Secretario General",
+      institution: "Sindicato de Músicos de la Sinfónica y Cámara de Asunción (SIMUSICA)",
+      description: "Secretario General del sindicato. Periodo 2021-2023 y reelecto para 2023-2025."
+    },
+    {
+      year: "2021 - 2022",
+      title: "Profesor de Flauta Traversa",
+      institution: "Universidad Nacional de Asunción (UNA)",
+      description: "Profesor de la cátedra de Flauta Traversa de la carrera de Licenciatura en Música."
+    },
+    {
+      year: "2018 - Actualmente",
+      title: "Director Invitado",
+      institution: "Orquesta de Cámara Municipal de Asunción (OCMA)",
+      description: "Director invitado en repetidas ocasiones, dirigiendo solistas y obras de cámara."
+    },
+    {
       year: "2014 - Actualmente",
       title: "1° Flauta Solista",
       institution: "Orquesta Sinfónica Nacional del Paraguay (OSN)",
@@ -21,24 +39,6 @@ export const Experience = () => {
       description: "Músico flautista, primera flauta solista de la orquesta de cámara municipal."
     },
     {
-      year: "2021 - 2025",
-      title: "Secretario General",
-      institution: "Sindicato de Músicos de la Sinfónica y Cámara de Asunción (SIMUSICA)",
-      description: "Secretario General del sindicato. Periodo 2021-2023 y reelecto para 2023-2025."
-    },
-    {
-      year: "2018 - Actualmente",
-      title: "Director Invitado",
-      institution: "Orquesta de Cámara Municipal de Asunción (OCMA)",
-      description: "Director invitado en repetidas ocasiones, dirigiendo solistas y obras de cámara."
-    },
-    {
-      year: "2021 - 2022",
-      title: "Profesor de Flauta Traversa",
-      institution: "Universidad Nacional de Asunción (UNA)",
-      description: "Profesor de la cátedra de Flauta Traversa de la carrera de Licenciatura en Música."
-    },
-    {
       year: "2011 - 2012",
       title: "Músico Invitado",
       institution: "Orquesta Sinfónica del Congreso Nacional (OSIC)",
@@ -51,16 +51,16 @@ export const Experience = () => {
       description: "Centro de aprendizaje Psico Social para Niños/as y Adolescentes con experiencia de vida en calle."
     },
     {
-      year: "2008 - 2009",
-      title: "Profesor de Música",
-      institution: "Sonidos de la Tierra",
-      description: "Profesor de flauta traversa en el proyecto de educación musical comunitaria. Formación de jóvenes músicos en comunidades del interior del país."
-    },
-    {
       year: "2009 - 2010",
       title: "Flautista y Piccolista",
       institution: "Orquesta Sinfónica de la Universidad del Norte (UNINORTE)",
       description: "Músico invitado como tercer flautista y piccolista."
+    },
+    {
+      year: "2008 - 2009",
+      title: "Profesor de Música",
+      institution: "Sonidos de la Tierra",
+      description: "Profesor de flauta traversa en el proyecto de educación musical comunitaria. Formación de jóvenes músicos en comunidades del interior del país."
     }
   ];
 
