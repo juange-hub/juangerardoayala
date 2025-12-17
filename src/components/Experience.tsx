@@ -51,6 +51,12 @@ export const Experience = () => {
       description: "Centro de aprendizaje Psico Social para Niños/as y Adolescentes con experiencia de vida en calle."
     },
     {
+      year: "2009 - 2014",
+      title: "Profesor de Música",
+      institution: "Sonidos de la Tierra",
+      description: "Profesor de flauta traversa y música en el proyecto de educación musical comunitaria. Formación de jóvenes músicos en comunidades del interior del país."
+    },
+    {
       year: "2009 - 2010",
       title: "Flautista y Piccolista",
       institution: "Orquesta Sinfónica de la Universidad del Norte (UNINORTE)",
