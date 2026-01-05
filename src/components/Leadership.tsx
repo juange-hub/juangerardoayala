@@ -98,10 +98,12 @@ export const Leadership = () => {
                     </div>
                     <div>
                       <h3 className="font-semibold text-foreground mb-2">Actividades Culturales</h3>
-                      <p className="text-sm text-muted-foreground leading-relaxed">
-                        Creación y organización de conciertos y eventos culturales que benefician
-                        a la ciudadanía, promoviendo el acceso a la música de calidad.
-                      </p>
+                      <ul className="text-sm text-muted-foreground leading-relaxed space-y-1 list-disc list-inside">
+                        <li>Conciertos y eventos culturales abiertos a la ciudadanía</li>
+                        <li>Charlas sobre derechos laborales, salud mental y salud física del músico sinfónico</li>
+                        <li>Dirigidas a socios y abiertas a estudiantes e interesados</li>
+                        <li>Con profesionales especialistas en cada área</li>
+                      </ul>
                     </div>
                   </div>
 
