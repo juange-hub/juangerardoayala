@@ -21,8 +21,8 @@ const activityCategories = [
     icon: Award,
     description: "Formación continua y reconocimientos",
     images: [
-      { src: reconocimiento1, alt: "Entrega de certificados" },
-      { src: reconocimiento2, alt: "Entrega de certificados a participantes" },
+      { src: reconocimiento1, alt: "Participantes de charlas y capacitaciones" },
+      { src: reconocimiento2, alt: "Participantes de capacitaciones" },
       { src: charlaAsamblea, alt: "Asamblea del SIMUSICA" },
     ]
   },
