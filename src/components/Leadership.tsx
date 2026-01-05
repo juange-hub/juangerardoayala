@@ -19,11 +19,12 @@ const activityCategories = [
   {
     title: "Capacitaciones",
     icon: Award,
-    description: "Formación continua y reconocimientos",
+    description: "Formación continua para socios y comunidad",
     images: [
-      { src: reconocimiento1, alt: "Participantes de charlas y capacitaciones" },
-      { src: reconocimiento2, alt: "Participantes de capacitaciones" },
+      { src: reconocimiento1, alt: "Charla con disertante" },
+      { src: reconocimiento2, alt: "Participantes de capacitación" },
       { src: charlaAsamblea, alt: "Asamblea del SIMUSICA" },
+      { src: confraternidadCafe, alt: "Participantes de charla con disertante" },
     ]
   },
   {
@@ -34,7 +35,6 @@ const activityCategories = [
       { src: reunionOficial1, alt: "Reunión oficial con autoridades" },
       { src: reunionOficial2, alt: "Mesa de trabajo institucional" },
       { src: reunionDirectiva, alt: "Reunión de comisión directiva" },
-      { src: confraternidadCafe, alt: "Comisión directiva" },
       { src: musicosConcierto, alt: "Comisión directiva y músicos" },
       { src: eventoCorreos, alt: "Comisión directiva en evento institucional" },
       { src: grupoOcma, alt: "Comisión directiva con autoridades" },
