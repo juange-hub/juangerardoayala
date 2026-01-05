@@ -81,10 +81,12 @@ export const Leadership = () => {
                     </div>
                     <div>
                       <h3 className="font-semibold text-foreground mb-2">Mejoras Institucionales</h3>
-                      <p className="text-sm text-muted-foreground leading-relaxed">
-                        Implementación de iniciativas para mejorar las condiciones de trabajo
-                        y el desarrollo profesional dentro de la institución.
-                      </p>
+                      <ul className="text-sm text-muted-foreground leading-relaxed space-y-1 list-disc list-inside">
+                        <li>Renovación de imagen de marca del sindicato</li>
+                        <li>Actualización de los estatutos sociales</li>
+                        <li>Trabajo cercano con autoridades municipales y la Dirección de Cultura</li>
+                        <li>Mejora de condiciones de trabajo y desarrollo profesional</li>
+                      </ul>
                     </div>
                   </div>
                 </div>
