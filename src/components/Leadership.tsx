@@ -1,7 +1,53 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { Users, Briefcase, Heart, Music, Shield, TrendingUp, Youtube, ExternalLink } from "lucide-react";
+import { Users, Briefcase, Heart, Music, Shield, TrendingUp, Youtube, ExternalLink, Camera, Handshake, Award, Coffee } from "lucide-react";
+
+// Importar imágenes de actividades
+import eventoCorreos from "@/assets/simusica/evento-correos.jpg";
+import musicosConcierto from "@/assets/simusica/musicos-concierto.jpg";
+import confraternidadCafe from "@/assets/simusica/confraternidad-cafe.jpg";
+import grupoOcma from "@/assets/simusica/grupo-ocma.jpg";
+import reunionOficial1 from "@/assets/simusica/reunion-oficial-1.jpg";
+import reunionOficial2 from "@/assets/simusica/reunion-oficial-2.jpg";
+import charlaAsamblea from "@/assets/simusica/charla-asamblea.jpg";
+import reconocimiento1 from "@/assets/simusica/reconocimiento-1.jpg";
+import reconocimiento2 from "@/assets/simusica/reconocimiento-2.jpg";
+import reunionDirectiva from "@/assets/simusica/reunion-directiva.jpg";
+
+const activityCategories = [
+  {
+    title: "Reuniones y Gestiones",
+    icon: Handshake,
+    description: "Trabajo continuo con autoridades e instituciones",
+    images: [
+      { src: reunionOficial1, alt: "Reunión oficial con autoridades" },
+      { src: reunionOficial2, alt: "Mesa de trabajo institucional" },
+      { src: reunionDirectiva, alt: "Reunión de comisión directiva" },
+    ]
+  },
+  {
+    title: "Charlas y Capacitaciones",
+    icon: Award,
+    description: "Formación continua para nuestros socios",
+    images: [
+      { src: charlaAsamblea, alt: "Asamblea y charla informativa" },
+      { src: reconocimiento1, alt: "Entrega de reconocimientos" },
+      { src: reconocimiento2, alt: "Grupo de participantes" },
+      { src: grupoOcma, alt: "Capacitación grupal" },
+    ]
+  },
+  {
+    title: "Eventos y Confraternidad",
+    icon: Coffee,
+    description: "Momentos de unión entre compañeros",
+    images: [
+      { src: confraternidadCafe, alt: "Encuentro de confraternidad" },
+      { src: musicosConcierto, alt: "Músicos después de concierto" },
+      { src: eventoCorreos, alt: "Evento institucional Correos del Paraguay" },
+    ]
+  }
+];
 
 const syndicateVideos = [
   {
@@ -176,6 +222,55 @@ export const Leadership = () => {
                         </CardContent>
                       </Card>
                     </a>
+                  ))}
+                </div>
+              </div>
+
+              {/* Galería de Actividades */}
+              <div className="pt-6 border-t border-border">
+                <div className="flex items-center gap-3 mb-6">
+                  <Camera className="w-5 h-5 text-primary" />
+                  <h3 className="font-semibold text-foreground">Galería de Actividades</h3>
+                </div>
+                
+                <div className="space-y-8">
+                  {activityCategories.map((category, catIndex) => (
+                    <div key={catIndex} className="space-y-4">
+                      <div className="flex items-center gap-3">
+                        <div className="p-2 rounded-lg bg-primary/10">
+                          <category.icon className="w-4 h-4 text-primary" />
+                        </div>
+                        <div>
+                          <h4 className="font-medium text-foreground">{category.title}</h4>
+                          <p className="text-xs text-muted-foreground">{category.description}</p>
+                        </div>
+                      </div>
+                      
+                      <div className={`grid gap-3 ${
+                        category.images.length === 3 
+                          ? 'grid-cols-2 md:grid-cols-3' 
+                          : category.images.length === 4 
+                            ? 'grid-cols-2 md:grid-cols-4' 
+                            : 'grid-cols-2 md:grid-cols-3'
+                      }`}>
+                        {category.images.map((image, imgIndex) => (
+                          <div 
+                            key={imgIndex}
+                            className="group relative aspect-[4/3] rounded-xl overflow-hidden cursor-pointer shadow-sm hover:shadow-lg transition-all duration-300"
+                          >
+                            <img
+                              src={image.src}
+                              alt={image.alt}
+                              className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                            />
+                            <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                            <div className="absolute bottom-0 left-0 right-0 p-3 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                              <p className="text-white text-xs font-medium line-clamp-2">{image.alt}</p>
+                            </div>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
                   ))}
                 </div>
               </div>
