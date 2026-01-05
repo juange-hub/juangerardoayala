@@ -17,7 +17,17 @@ import reunionDirectiva from "@/assets/simusica/reunion-directiva.jpg";
 
 const activityCategories = [
   {
-    title: "Reuniones de Comisión Directiva",
+    title: "Capacitaciones",
+    icon: Award,
+    description: "Formación continua y reconocimientos",
+    images: [
+      { src: reconocimiento1, alt: "Entrega de certificados" },
+      { src: reconocimiento2, alt: "Entrega de certificados a participantes" },
+      { src: charlaAsamblea, alt: "Asamblea del SIMUSICA" },
+    ]
+  },
+  {
+    title: "Comisión Directiva con Autoridades",
     icon: Handshake,
     description: "Trabajo continuo con autoridades e instituciones",
     images: [
@@ -28,16 +38,6 @@ const activityCategories = [
       { src: musicosConcierto, alt: "Comisión directiva y músicos" },
       { src: eventoCorreos, alt: "Comisión directiva en evento institucional" },
       { src: grupoOcma, alt: "Comisión directiva con autoridades" },
-      { src: charlaAsamblea, alt: "Reunión con autoridades" },
-    ]
-  },
-  {
-    title: "Capacitaciones",
-    icon: Award,
-    description: "Formación continua y reconocimientos",
-    images: [
-      { src: reconocimiento1, alt: "Entrega de certificados" },
-      { src: reconocimiento2, alt: "Entrega de certificados a participantes" },
     ]
   }
 ];
