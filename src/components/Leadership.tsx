@@ -1,7 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { Users, Briefcase, Heart, Music, Shield, TrendingUp, Youtube, ExternalLink, Camera, Handshake, Award, Coffee } from "lucide-react";
+import { Users, Briefcase, Heart, Music, Shield, TrendingUp, Youtube, ExternalLink, Camera, Handshake, Award } from "lucide-react";
 
 // Importar imágenes de actividades
 import eventoCorreos from "@/assets/simusica/evento-correos.jpg";
@@ -17,34 +17,27 @@ import reunionDirectiva from "@/assets/simusica/reunion-directiva.jpg";
 
 const activityCategories = [
   {
-    title: "Reuniones y Gestiones",
+    title: "Reuniones de Comisión Directiva",
     icon: Handshake,
     description: "Trabajo continuo con autoridades e instituciones",
     images: [
       { src: reunionOficial1, alt: "Reunión oficial con autoridades" },
       { src: reunionOficial2, alt: "Mesa de trabajo institucional" },
       { src: reunionDirectiva, alt: "Reunión de comisión directiva" },
+      { src: confraternidadCafe, alt: "Comisión directiva" },
+      { src: musicosConcierto, alt: "Comisión directiva y músicos" },
+      { src: eventoCorreos, alt: "Comisión directiva en evento institucional" },
+      { src: grupoOcma, alt: "Comisión directiva con autoridades" },
+      { src: charlaAsamblea, alt: "Reunión con autoridades" },
     ]
   },
   {
-    title: "Charlas y Capacitaciones",
+    title: "Capacitaciones",
     icon: Award,
-    description: "Formación continua para nuestros socios",
+    description: "Formación continua y reconocimientos",
     images: [
-      { src: charlaAsamblea, alt: "Asamblea y charla informativa" },
-      { src: reconocimiento1, alt: "Entrega de reconocimientos" },
-      { src: reconocimiento2, alt: "Grupo de participantes" },
-      { src: grupoOcma, alt: "Capacitación grupal" },
-    ]
-  },
-  {
-    title: "Eventos y Confraternidad",
-    icon: Coffee,
-    description: "Momentos de unión entre compañeros",
-    images: [
-      { src: confraternidadCafe, alt: "Encuentro de confraternidad" },
-      { src: musicosConcierto, alt: "Músicos después de concierto" },
-      { src: eventoCorreos, alt: "Evento institucional Correos del Paraguay" },
+      { src: reconocimiento1, alt: "Entrega de certificados" },
+      { src: reconocimiento2, alt: "Entrega de certificados a participantes" },
     ]
   }
 ];
