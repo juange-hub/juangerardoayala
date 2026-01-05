@@ -103,6 +103,7 @@ export const Leadership = () => {
                         <li>Charlas sobre derechos laborales, salud mental y salud física del músico sinfónico</li>
                         <li>Dirigidas a socios y abiertas a estudiantes e interesados</li>
                         <li>Con profesionales especialistas en cada área</li>
+                        <li>Actividades recreativas y de confraternidad entre compañeros</li>
                       </ul>
                     </div>
                   </div>
