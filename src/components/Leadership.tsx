@@ -22,7 +22,6 @@ const activityCategories = [
     icon: Users,
     description: "Los 6 miembros de la comisión directiva del SIMUSICA",
     images: [
-      { src: reunionDirectiva, alt: "Comisión directiva del SIMUSICA" },
       { src: confraternidadCafe, alt: "Reunión de comisión directiva" },
       { src: musicosConcierto, alt: "Comisión directiva en concierto" },
     ]
@@ -43,6 +42,7 @@ const activityCategories = [
     icon: Handshake,
     description: "Trabajo continuo con autoridades e instituciones",
     images: [
+      { src: reunionDirectiva, alt: "Reunión de gestión" },
       { src: reunionOficial1, alt: "Reunión oficial con autoridades" },
       { src: reunionOficial2, alt: "Mesa de trabajo institucional" },
       { src: eventoCorreos, alt: "Evento institucional" },
