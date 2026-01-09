@@ -1,8 +1,9 @@
+import { useState } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { Users, Briefcase, Heart, Music, Shield, TrendingUp, Youtube, ExternalLink, Camera, Handshake, Award } from "lucide-react";
-
+import { Dialog, DialogContent } from "@/components/ui/dialog";
+import { Users, Briefcase, Heart, Music, Shield, TrendingUp, Youtube, ExternalLink, Camera, Handshake, Award, X, ChevronLeft, ChevronRight } from "lucide-react";
 // Importar imágenes de actividades
 import eventoCorreos from "@/assets/simusica/evento-correos.jpg";
 import musicosConcierto from "@/assets/simusica/musicos-concierto.jpg";
@@ -61,6 +62,49 @@ const syndicateVideos = [
 ];
 
 export const Leadership = () => {
+  const [lightboxOpen, setLightboxOpen] = useState(false);
+  const [currentImage, setCurrentImage] = useState<{ src: string; alt: string } | null>(null);
+  const [currentCategoryIndex, setCurrentCategoryIndex] = useState(0);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  const allImages = activityCategories.flatMap(cat => cat.images);
+
+  const openLightbox = (catIndex: number, imgIndex: number) => {
+    setCurrentCategoryIndex(catIndex);
+    setCurrentImageIndex(imgIndex);
+    const image = activityCategories[catIndex].images[imgIndex];
+    setCurrentImage(image);
+    setLightboxOpen(true);
+  };
+
+  const getGlobalIndex = () => {
+    let index = 0;
+    for (let i = 0; i < currentCategoryIndex; i++) {
+      index += activityCategories[i].images.length;
+    }
+    return index + currentImageIndex;
+  };
+
+  const navigateImage = (direction: 'prev' | 'next') => {
+    const globalIndex = getGlobalIndex();
+    let newGlobalIndex = direction === 'next' 
+      ? (globalIndex + 1) % allImages.length 
+      : (globalIndex - 1 + allImages.length) % allImages.length;
+    
+    // Find the category and image index for the new global index
+    let remaining = newGlobalIndex;
+    for (let catIdx = 0; catIdx < activityCategories.length; catIdx++) {
+      const catImages = activityCategories[catIdx].images;
+      if (remaining < catImages.length) {
+        setCurrentCategoryIndex(catIdx);
+        setCurrentImageIndex(remaining);
+        setCurrentImage(catImages[remaining]);
+        break;
+      }
+      remaining -= catImages.length;
+    }
+  };
+
   return (
     <section id="liderazgo" className="py-20 bg-background">
       <div className="container mx-auto px-4">
@@ -249,6 +293,7 @@ export const Leadership = () => {
                         {category.images.map((image, imgIndex) => (
                           <div 
                             key={imgIndex}
+                            onClick={() => openLightbox(catIndex, imgIndex)}
                             className="group relative aspect-[4/3] rounded-xl overflow-hidden cursor-pointer shadow-sm hover:shadow-lg transition-all duration-300"
                           >
                             <img
@@ -271,6 +316,54 @@ export const Leadership = () => {
           </Card>
         </div>
       </div>
+
+      {/* Lightbox Dialog */}
+      <Dialog open={lightboxOpen} onOpenChange={setLightboxOpen}>
+        <DialogContent className="max-w-5xl w-[95vw] h-[90vh] p-0 bg-black/95 border-none">
+          <div className="relative w-full h-full flex items-center justify-center">
+            {/* Close button */}
+            <button
+              onClick={() => setLightboxOpen(false)}
+              className="absolute top-4 right-4 z-50 p-2 rounded-full bg-white/10 hover:bg-white/20 transition-colors"
+            >
+              <X className="w-6 h-6 text-white" />
+            </button>
+
+            {/* Previous button */}
+            <button
+              onClick={() => navigateImage('prev')}
+              className="absolute left-4 z-50 p-3 rounded-full bg-white/10 hover:bg-white/20 transition-colors"
+            >
+              <ChevronLeft className="w-8 h-8 text-white" />
+            </button>
+
+            {/* Image */}
+            {currentImage && (
+              <div className="flex flex-col items-center gap-4 max-h-full px-16">
+                <img
+                  src={currentImage.src}
+                  alt={currentImage.alt}
+                  className="max-w-full max-h-[75vh] object-contain rounded-lg"
+                />
+                <p className="text-white text-center text-lg font-medium px-4">
+                  {currentImage.alt}
+                </p>
+                <p className="text-white/60 text-sm">
+                  {getGlobalIndex() + 1} / {allImages.length}
+                </p>
+              </div>
+            )}
+
+            {/* Next button */}
+            <button
+              onClick={() => navigateImage('next')}
+              className="absolute right-4 z-50 p-3 rounded-full bg-white/10 hover:bg-white/20 transition-colors"
+            >
+              <ChevronRight className="w-8 h-8 text-white" />
+            </button>
+          </div>
+        </DialogContent>
+      </Dialog>
     </section>
   );
 };
