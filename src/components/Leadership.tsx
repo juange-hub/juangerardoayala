@@ -18,27 +18,34 @@ import reunionDirectiva from "@/assets/simusica/reunion-directiva.jpg";
 
 const activityCategories = [
   {
-    title: "Capacitaciones",
+    title: "Comisión Directiva",
+    icon: Users,
+    description: "Los 6 miembros de la comisión directiva del SIMUSICA",
+    images: [
+      { src: reunionDirectiva, alt: "Comisión directiva del SIMUSICA" },
+      { src: confraternidadCafe, alt: "Reunión de comisión directiva" },
+    ]
+  },
+  {
+    title: "Charlas y Capacitaciones",
     icon: Award,
     description: "Formación continua para socios y comunidad",
     images: [
       { src: reconocimiento1, alt: "Charla con disertante" },
       { src: reconocimiento2, alt: "Participantes de capacitación" },
       { src: charlaAsamblea, alt: "Asamblea del SIMUSICA" },
+      { src: grupoOcma, alt: "Capacitación grupal" },
+      { src: musicosConcierto, alt: "Músicos en concierto" },
     ]
   },
   {
-    title: "Comisión Directiva con Autoridades",
+    title: "Reuniones y Gestión",
     icon: Handshake,
     description: "Trabajo continuo con autoridades e instituciones",
     images: [
       { src: reunionOficial1, alt: "Reunión oficial con autoridades" },
       { src: reunionOficial2, alt: "Mesa de trabajo institucional" },
-      { src: confraternidadCafe, alt: "Reunión de comisión directiva" },
-      { src: reunionDirectiva, alt: "Comisión directiva" },
-      { src: musicosConcierto, alt: "Comisión directiva y músicos" },
-      { src: eventoCorreos, alt: "Comisión directiva en evento institucional" },
-      { src: grupoOcma, alt: "Comisión directiva con autoridades" },
+      { src: eventoCorreos, alt: "Evento institucional" },
     ]
   }
 ];
