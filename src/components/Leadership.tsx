@@ -24,6 +24,7 @@ const activityCategories = [
     images: [
       { src: reunionDirectiva, alt: "Comisión directiva del SIMUSICA" },
       { src: confraternidadCafe, alt: "Reunión de comisión directiva" },
+      { src: musicosConcierto, alt: "Comisión directiva en concierto" },
     ]
   },
   {
@@ -35,7 +36,6 @@ const activityCategories = [
       { src: reconocimiento2, alt: "Participantes de capacitación" },
       { src: charlaAsamblea, alt: "Asamblea del SIMUSICA" },
       { src: grupoOcma, alt: "Capacitación grupal" },
-      { src: musicosConcierto, alt: "Músicos en concierto" },
     ]
   },
   {
