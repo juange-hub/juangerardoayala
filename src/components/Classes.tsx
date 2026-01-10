@@ -33,18 +33,18 @@ export const Classes = () => {
       popular: true
     },
     {
-      name: "Programa Intensivo",
+      name: "Combo Doble",
       priceUSD: "$140",
       priceGS: "Gs. 850.000",
-      duration: "6 clases / 2 meses",
-      badge: "Enero - Febrero 2026",
+      duration: "8 clases / 4 meses",
+      badge: "Ahorrá 20%",
       features: [
-        "Ahorrás Gs. 170.000 en total",
-        "3 clases mensuales intensivas",
-        "Preparación para audiciones",
-        "Material premium incluido",
-        "Acceso a recursos online",
-        "Técnica avanzada de interpretación"
+        "2 clases por mes durante 4 meses",
+        "Una clase enfocada en técnica y ejercicios",
+        "Otra clase enfocada en repertorio y performance",
+        "Seguimiento continuo de progreso",
+        "Material de estudio incluido",
+        "Ideal para desarrollo integral"
       ],
       popular: false
     }
