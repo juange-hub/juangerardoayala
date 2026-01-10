@@ -16,9 +16,9 @@ const Index = () => {
       <TeachingSection />
       <Bio />
       <Experience />
-      <Leadership />
       <Projects />
       <Multimedia />
+      <Leadership />
       <WhyStudy />
       <Classes />
       <Footer />
