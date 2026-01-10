@@ -11,16 +11,16 @@ export const Footer = () => {
               <h3 className="text-xl font-bold">Clases de Música</h3>
             </div>
             <p className="text-primary-foreground/80">
-              Formando músicos con excelencia y pasión desde 2008
+              Flautista profesional, docente y líder gremial
             </p>
           </div>
           
           <div>
             <h4 className="text-lg font-semibold mb-4">Contacto</h4>
             <div className="space-y-3">
-              <a href="mailto:contacto@clasesmusica.com" className="flex items-center gap-2 text-primary-foreground/80 hover:text-accent transition-[var(--transition-smooth)]">
+              <a href="mailto:juanayalaflute@gmail.com" className="flex items-center gap-2 text-primary-foreground/80 hover:text-accent transition-[var(--transition-smooth)]">
                 <Mail className="w-5 h-5" />
-                <span>contacto@clasesmusica.com</span>
+                <span>juanayalaflute@gmail.com</span>
               </a>
               <a href="tel:+595971664878" className="flex items-center gap-2 text-primary-foreground/80 hover:text-accent transition-[var(--transition-smooth)]">
                 <Phone className="w-5 h-5" />
@@ -44,7 +44,7 @@ export const Footer = () => {
         </div>
         
         <div className="border-t border-primary-foreground/20 pt-8 text-center text-primary-foreground/60">
-          <p>&copy; {new Date().getFullYear()} Clases de Música. Todos los derechos reservados.</p>
+          <p>&copy; {new Date().getFullYear()} Juan Gerardo Ayala. Todos los derechos reservados.</p>
         </div>
       </div>
     </footer>
