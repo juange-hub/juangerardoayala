@@ -8,7 +8,7 @@ export const Footer = () => {
           <div>
             <div className="flex items-center gap-2 mb-4">
               <Music className="w-6 h-6 text-accent" />
-              <h3 className="text-xl font-bold">Clases de Música</h3>
+              <h3 className="text-xl font-bold">Juan Gerardo Ayala</h3>
             </div>
             <p className="text-primary-foreground/80">
               Flautista profesional, docente y líder gremial
