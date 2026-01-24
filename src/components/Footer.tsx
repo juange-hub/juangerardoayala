@@ -26,9 +26,9 @@ export const Footer = () => {
                 <Phone className="w-5 h-5" />
                 <span>+595 971 664878</span>
               </a>
-              <div className="flex items-start gap-2 text-primary-foreground/80">
-                <MapPin className="w-5 h-5 flex-shrink-0 mt-0.5" />
-                <span>Av. Principal 123, Centro Cultural</span>
+              <div className="flex items-center gap-2 text-primary-foreground/80">
+                <MapPin className="w-5 h-5" />
+                <span>Asunción, Paraguay</span>
               </div>
             </div>
           </div>
