@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import heroImage from "@/assets/hero-musician.jpg";
+import heroImage from "@/assets/gallery/concierto-flauta-1.jpg";
 
 export const Hero = () => {
   const scrollToSection = (id: string) => {
@@ -15,7 +15,7 @@ export const Hero = () => {
           backgroundImage: `url(${heroImage})`,
         }}
       >
-        <div className="absolute inset-0 bg-gradient-to-b from-primary/90 via-primary/70 to-background"></div>
+        <div className="absolute inset-0 bg-black/40"></div>
       </div>
       
       <div className="relative z-10 container mx-auto px-4 text-center">
