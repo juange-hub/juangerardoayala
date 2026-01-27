@@ -1,12 +1,16 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Youtube, Instagram, Music2 } from "lucide-react";
 
+import conciertoFlauta1 from "@/assets/gallery/concierto-flauta-1.jpg";
+import retratoFlauta from "@/assets/gallery/retrato-flauta.jpg";
+import conciertoOrquesta from "@/assets/gallery/concierto-orquesta.jpg";
+
 const Multimedia = () => {
   const socialLinks = [
     {
       name: "YouTube",
       icon: Youtube,
-      url: "#",
+      url: "https://www.youtube.com/@juangerardoayala",
       color: "hover:text-[#FF0000]"
     },
     {
@@ -25,34 +29,19 @@ const Multimedia = () => {
 
   const concerts = [
     {
-      title: "Concierto Internacional - Europa",
-      image: "https://images.unsplash.com/photo-1514320291840-2e0a9bf2a9ae?w=800&q=80",
-      location: "Teatro Real, Madrid"
+      title: "Presentación como Solista",
+      image: conciertoFlauta1,
+      location: "Recital de Flauta"
     },
     {
-      title: "Gira Sudamericana",
-      image: "https://images.unsplash.com/photo-1465847899084-d164df4dedc6?w=800&q=80",
-      location: "Teatro Colón, Buenos Aires"
+      title: "Retrato Profesional",
+      image: retratoFlauta,
+      location: "Sesión Fotográfica"
     },
     {
-      title: "Festival Nacional de Música",
-      image: "https://images.unsplash.com/photo-1507838153414-b4b713384a76?w=800&q=80",
-      location: "Auditorio Nacional"
-    },
-    {
-      title: "Concierto de Cámara",
-      image: "https://images.unsplash.com/photo-1519683384663-18b88a9628e2?w=800&q=80",
-      location: "Sala Principal"
-    },
-    {
-      title: "Presentación Sinfónica",
-      image: "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&q=80",
-      location: "Teatro de la Ciudad"
-    },
-    {
-      title: "Tour Internacional",
-      image: "https://images.unsplash.com/photo-1511735111819-9a3f7709049c?w=800&q=80",
-      location: "Carnegie Hall, Nueva York"
+      title: "Concierto con Orquesta",
+      image: conciertoOrquesta,
+      location: "Teatro Municipal"
     }
   ];
 
