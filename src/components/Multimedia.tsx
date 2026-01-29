@@ -13,9 +13,9 @@ const Multimedia = () => {
     },
     {
       name: "Instagram",
-      handle: "@juangerardoayala",
+      handle: "@juangeayala.py",
       icon: Instagram,
-      url: "https://www.instagram.com/juangerardoayala",
+      url: "https://www.instagram.com/juangeayala.py/",
       color: "hover:text-[#E4405F] hover:border-[#E4405F]/30",
       description: "Perfil profesional"
     },
