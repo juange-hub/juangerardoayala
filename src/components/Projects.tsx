@@ -154,24 +154,43 @@ export const Projects = () => {
                 {project.videos && project.videos.length > 0 && (
                   <div className="pt-4 border-t border-border">
                     <div className="flex items-center gap-2 mb-3">
-                      <Youtube className="w-4 h-4 text-red-600" />
-                      <span className="text-sm font-semibold text-foreground">Videos</span>
+                      <Youtube className="w-4 h-4 text-destructive" />
+                      <span className="text-sm font-semibold text-foreground">Más del mismo evento</span>
                     </div>
-                    <div className="space-y-2">
-                      {project.videos.map((video, i) => (
-                        <a
-                          key={i}
-                          href={video.url}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="flex items-center justify-between p-2 rounded-md hover:bg-muted/50 transition-colors group"
-                        >
-                          <span className="text-sm text-muted-foreground group-hover:text-foreground transition-colors">
-                            {video.title}
-                          </span>
-                          <ExternalLink className="w-4 h-4 text-muted-foreground group-hover:text-primary transition-colors" />
-                        </a>
-                      ))}
+                    <div className="space-y-3">
+                      {project.videos.map((video, i) => {
+                        const videoId = video.url.includes('youtu.be/') 
+                          ? video.url.split('youtu.be/')[1]?.split('?')[0]
+                          : video.url.includes('v=')
+                            ? video.url.split('v=')[1]?.split('&')[0]
+                            : null;
+                        
+                        return (
+                          <div key={i} className="space-y-1">
+                            <p className="text-xs text-muted-foreground font-medium">{video.title}</p>
+                            {videoId ? (
+                              <div className="relative aspect-video rounded-md overflow-hidden bg-muted">
+                                <iframe
+                                  src={`https://www.youtube.com/embed/${videoId}`}
+                                  title={video.title}
+                                  className="w-full h-full"
+                                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                  allowFullScreen
+                                />
+                              </div>
+                            ) : (
+                              <a
+                                href={video.url}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="flex items-center gap-2 text-sm text-primary hover:underline"
+                              >
+                                Ver video <ExternalLink className="w-3 h-3" />
+                              </a>
+                            )}
+                          </div>
+                        );
+                      })}
                     </div>
                   </div>
                 )}
