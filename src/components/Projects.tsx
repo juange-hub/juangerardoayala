@@ -33,7 +33,10 @@ const projects = [
     ],
     tags: ["Concierto", "Flauta Traversa", "Gratuito"],
     youtubeId: "lMQGHmaM0J8",
-    videos: []
+    videos: [
+      { title: "Concierto completo - Evento de Flautistas 2021", url: "https://youtu.be/X_842soB9fI" },
+      { title: "Trío de Flautas", url: "https://youtu.be/PjHgrNcQJr0" }
+    ]
   },
   {
     title: "Clases Magistrales con Matthieu Gauci-Ancelin",
