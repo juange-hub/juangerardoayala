@@ -17,7 +17,7 @@ const projects = [
       "Talleres prácticos de mantenimiento instrumental"
     ],
     tags: ["Masterclass", "Taller", "Viento Madera"],
-    sponsors: ["Powell Flutes", "Orquesta Sinfónica Nacional del Paraguay"],
+    sponsors: ["Powell Flutes", "Orquesta Sinfónica Nacional del Paraguay", "Sponsor Anónimo"],
     videos: []
   },
   {
