@@ -3,7 +3,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
-import { Users, Briefcase, Heart, Music, Shield, TrendingUp, Youtube, ExternalLink, Camera, Handshake, Award, X, ChevronLeft, ChevronRight } from "lucide-react";
+import { Users, Briefcase, Heart, Music, Shield, TrendingUp, Camera, Handshake, Award, X, ChevronLeft, ChevronRight } from "lucide-react";
 // Importar imágenes de actividades
 import eventoCorreos from "@/assets/simusica/evento-correos.jpg";
 import musicosConcierto from "@/assets/simusica/musicos-concierto.jpg";
@@ -50,23 +50,6 @@ const activityCategories = [
   }
 ];
 
-const syndicateVideos = [
-  {
-    title: "Concierto Benéfico SIMUSICA 2023",
-    url: "https://youtube.com/watch?v=example1",
-    description: "Concierto organizado por el sindicato para recaudar fondos"
-  },
-  {
-    title: "Capacitación: Derechos Laborales",
-    url: "https://youtube.com/watch?v=example2",
-    description: "Taller educativo sobre derechos de los músicos"
-  },
-  {
-    title: "Asamblea General SIMUSICA",
-    url: "https://youtube.com/watch?v=example3",
-    description: "Presentación de logros y proyectos del periodo"
-  }
-];
 
 export const Leadership = () => {
   const [lightboxOpen, setLightboxOpen] = useState(false);
@@ -231,42 +214,6 @@ export const Leadership = () => {
                     <div className="text-2xl font-bold text-primary mb-1">100%</div>
                     <div className="text-sm text-muted-foreground">Compromiso social</div>
                   </div>
-                </div>
-              </div>
-
-              <div className="pt-6 border-t border-border">
-                <div className="flex items-center gap-3 mb-4">
-                  <Youtube className="w-5 h-5 text-primary" />
-                  <h3 className="font-semibold text-foreground">Actividades y Conciertos</h3>
-                </div>
-                <p className="text-sm text-muted-foreground mb-4">
-                  Mira algunos de los conciertos, capacitaciones y eventos organizados por SIMUSICA
-                </p>
-                <div className="grid sm:grid-cols-3 gap-3">
-                  {syndicateVideos.map((video, index) => (
-                    <a
-                      key={index}
-                      href={video.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="block"
-                    >
-                      <Card className="h-full hover:shadow-md transition-all hover:border-primary/40 cursor-pointer">
-                        <CardContent className="pt-4 space-y-2">
-                          <div className="flex items-start justify-between gap-2">
-                            <Youtube className="w-5 h-5 text-red-600 flex-shrink-0 mt-0.5" />
-                            <ExternalLink className="w-4 h-4 text-muted-foreground flex-shrink-0" />
-                          </div>
-                          <h4 className="font-medium text-sm text-foreground leading-tight">
-                            {video.title}
-                          </h4>
-                          <p className="text-xs text-muted-foreground line-clamp-2">
-                            {video.description}
-                          </p>
-                        </CardContent>
-                      </Card>
-                    </a>
-                  ))}
                 </div>
               </div>
 
