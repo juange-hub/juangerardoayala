@@ -8,24 +8,21 @@ const Multimedia = () => {
       handle: "@juangerardoayala",
       icon: Youtube,
       url: "https://www.youtube.com/@juangerardoayala",
-      color: "hover:text-[#FF0000] hover:border-[#FF0000]/30",
-      description: "Conciertos y presentaciones"
+      color: "hover:text-[#FF0000] hover:border-[#FF0000]/30"
     },
     {
       name: "Instagram",
       handle: "@juangeayala.py",
       icon: Instagram,
       url: "https://www.instagram.com/juangeayala.py/",
-      color: "hover:text-[#E4405F] hover:border-[#E4405F]/30",
-      description: "Perfil profesional"
+      color: "hover:text-[#E4405F] hover:border-[#E4405F]/30"
     },
     {
       name: "TikTok",
       handle: "@juangerardoayala",
       icon: Music2,
       url: "https://www.tiktok.com/@juangerardoayala",
-      color: "hover:text-[#00F2EA] hover:border-[#00F2EA]/30",
-      description: "Contenido musical"
+      color: "hover:text-[#00F2EA] hover:border-[#00F2EA]/30"
     }
   ];
 
@@ -63,8 +60,7 @@ const Multimedia = () => {
               <Card className={`p-6 text-center transition-all duration-300 ${social.color} hover:shadow-lg`}>
                 <social.icon className="w-10 h-10 mx-auto mb-3" />
                 <h3 className="font-semibold text-foreground mb-1">{social.name}</h3>
-                <p className="text-sm text-primary mb-2">{social.handle}</p>
-                <p className="text-xs text-muted-foreground">{social.description}</p>
+                <p className="text-sm text-primary">{social.handle}</p>
               </Card>
             </a>
           ))}
