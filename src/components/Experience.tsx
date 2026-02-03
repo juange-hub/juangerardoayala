@@ -1,4 +1,9 @@
-import { Card } from "@/components/ui/card";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 
 export const Experience = () => {
   const timeline = [
@@ -65,30 +70,42 @@ export const Experience = () => {
   ];
 
   return (
-    <section id="experiencia" className="py-20 bg-muted/30">
+    <section id="experiencia" className="py-16 bg-muted/30">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-foreground">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-10 text-foreground">
           Trayectoria Profesional
         </h2>
         
-        <div className="max-w-4xl mx-auto space-y-8">
-          {timeline.map((item, index) => (
-            <Card 
-              key={index}
-              className="p-6 hover:shadow-[var(--shadow-card)] transition-[var(--transition-smooth)] border-l-4 border-l-accent"
-            >
-              <div className="flex flex-col md:flex-row md:items-center gap-4">
-                <div className="md:w-48 flex-shrink-0">
-                  <span className="text-accent font-semibold text-lg">{item.year}</span>
-                </div>
-                <div className="flex-grow">
-                  <h3 className="text-xl font-bold mb-1">{item.title}</h3>
-                  <p className="text-muted-foreground font-medium mb-2">{item.institution}</p>
-                  <p className="text-muted-foreground">{item.description}</p>
-                </div>
-              </div>
-            </Card>
-          ))}
+        <div className="max-w-3xl mx-auto">
+          <Accordion type="single" collapsible className="space-y-2">
+            {timeline.map((item, index) => (
+              <AccordionItem 
+                key={index} 
+                value={`item-${index}`}
+                className="bg-card border border-border rounded-lg px-4 data-[state=open]:border-accent"
+              >
+                <AccordionTrigger className="hover:no-underline py-3">
+                  <div className="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-4 text-left w-full pr-4">
+                    <span className="text-accent font-semibold text-sm sm:w-36 flex-shrink-0">
+                      {item.year}
+                    </span>
+                    <div className="flex-grow">
+                      <span className="font-semibold text-foreground">{item.title}</span>
+                      <span className="text-muted-foreground hidden sm:inline"> — {item.institution}</span>
+                    </div>
+                  </div>
+                </AccordionTrigger>
+                <AccordionContent className="pb-4 pt-0">
+                  <div className="pl-0 sm:pl-40">
+                    <p className="text-muted-foreground font-medium text-sm mb-1 sm:hidden">
+                      {item.institution}
+                    </p>
+                    <p className="text-muted-foreground text-sm">{item.description}</p>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
+            ))}
+          </Accordion>
         </div>
       </div>
     </section>
