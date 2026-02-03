@@ -1,9 +1,14 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Check } from "lucide-react";
+import { Check, Users, Clock } from "lucide-react";
 
 export const Classes = () => {
+  // Configuración de cupos - Cambiar estos valores según disponibilidad
+  const totalSpots = 8;
+  const takenSpots = 5;
+  const availableSpots = totalSpots - takenSpots;
+
   const packages = [
     {
       name: "Clase Individual",
@@ -56,9 +61,38 @@ export const Classes = () => {
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 text-foreground">
           Clases Particulares
         </h2>
-        <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
+        <p className="text-center text-muted-foreground mb-6 max-w-2xl mx-auto">
           Clases de flauta con enfoque profesional - Elige el plan que mejor se adapte a tus objetivos musicales
         </p>
+
+        {/* Banner de cupos limitados */}
+        <div className="max-w-md mx-auto mb-12">
+          <div className="bg-accent/10 border border-accent/30 rounded-xl p-4 text-center">
+            <div className="flex items-center justify-center gap-2 mb-2">
+              <Users className="w-5 h-5 text-accent" />
+              <span className="font-semibold text-foreground">Cupos Limitados</span>
+            </div>
+            <div className="flex items-center justify-center gap-3">
+              <div className="flex gap-1">
+                {Array.from({ length: totalSpots }).map((_, i) => (
+                  <div
+                    key={i}
+                    className={`w-3 h-3 rounded-full transition-colors ${
+                      i < takenSpots ? 'bg-muted-foreground/40' : 'bg-accent'
+                    }`}
+                  />
+                ))}
+              </div>
+              <span className="text-sm text-muted-foreground">
+                <span className="text-accent font-bold">{availableSpots}</span> de {totalSpots} disponibles
+              </span>
+            </div>
+            <p className="text-xs text-muted-foreground mt-2 flex items-center justify-center gap-1">
+              <Clock className="w-3 h-3" />
+              Reservá tu lugar para este periodo
+            </p>
+          </div>
+        </div>
 
         <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto mb-16">
           {packages.map((pkg, index) => (
