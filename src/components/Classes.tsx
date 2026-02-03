@@ -35,7 +35,7 @@ export const Classes = () => {
         "Material de estudio incluido",
         "Acceso a recursos online"
       ],
-      popular: true
+      popular: false
     },
     {
       name: "Combo Doble",
