@@ -15,6 +15,7 @@ import charlaAsamblea from "@/assets/simusica/charla-asamblea.jpg";
 import reconocimiento1 from "@/assets/simusica/reconocimiento-1.jpg";
 import reconocimiento2 from "@/assets/simusica/reconocimiento-2.jpg";
 import reunionDirectiva from "@/assets/simusica/reunion-directiva.jpg";
+import directorImage from "@/assets/director-editada.jpg";
 
 const activityCategories = [
   {
@@ -110,9 +111,20 @@ export const Leadership = () => {
         <div className="max-w-5xl mx-auto">
           <Card className="overflow-hidden border-primary/20 bg-gradient-to-br from-card to-card/50">
             <CardHeader className="bg-primary/5 border-b border-primary/10">
-              <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
-                <div>
-                  <CardTitle className="text-2xl mb-2 flex items-center gap-3">
+              <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+                {/* Foto del Director */}
+                <div className="flex-shrink-0 mx-auto md:mx-0">
+                  <div className="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden border-4 border-primary/20 shadow-lg">
+                    <img 
+                      src={directorImage} 
+                      alt="Juan Gerardo Ayala - Director de Orquesta" 
+                      className="w-full h-full object-cover object-top"
+                    />
+                  </div>
+                </div>
+                
+                <div className="flex-1 text-center md:text-left">
+                  <CardTitle className="text-2xl mb-2 flex items-center justify-center md:justify-start gap-3">
                     <Briefcase className="w-6 h-6 text-primary" />
                     Secretario General
                   </CardTitle>
@@ -121,7 +133,8 @@ export const Leadership = () => {
                   </p>
                   <p className="text-sm text-muted-foreground mt-1">SIMUSICA</p>
                 </div>
-                <div className="flex flex-col gap-2">
+                
+                <div className="flex flex-col gap-2 items-center md:items-end">
                   <Badge variant="default" className="text-sm px-4 py-2">
                     2021 - 2023
                   </Badge>

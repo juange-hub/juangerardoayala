@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import heroImage from "@/assets/gallery/concierto-flauta-1.jpg";
+import heroImage from "@/assets/hero-flautista-editada.jpg";
 
 export const Hero = () => {
   const scrollToSection = (id: string) => {
