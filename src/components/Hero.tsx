@@ -8,18 +8,18 @@ export const Hero = () => {
   };
 
   return (
-    <section className="relative min-h-screen flex items-end justify-center overflow-hidden pb-20 md:pb-24">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       <div 
-        className="absolute inset-0 bg-cover bg-top"
+        className="absolute inset-0 bg-cover bg-center"
         style={{ 
           backgroundImage: `url(${heroImage})`,
         }}
       >
-        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+        <div className="absolute inset-0 bg-black/40"></div>
       </div>
       
       <div className="relative z-10 container mx-auto px-4 text-center">
-        <h1 className="text-5xl md:text-7xl font-bold mb-4 text-primary-foreground animate-fade-in">
+        <h1 className="text-5xl md:text-7xl font-bold mb-6 text-primary-foreground animate-fade-in">
           Juan Gerardo Ayala
         </h1>
         <p className="text-xl md:text-2xl mb-8 text-primary-foreground/90 max-w-2xl mx-auto">
