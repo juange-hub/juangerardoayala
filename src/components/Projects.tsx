@@ -26,7 +26,7 @@ const projects = [
     videos: [],
     gallery: [
       { src: charlaBuffetCrampon, alt: "Charla Buffet Crampon" },
-      { src: charlaBuffetCrampon2, alt: "Taller de mantenimiento instrumental" },
+      { src: charlaBuffetCrampon2, alt: "Charla Buffet Crampon" },
       { src: charlaAdriano, alt: "Charla del Lic. Adriano Calcagno" },
       { src: charlaAudiencia, alt: "Audiencia en las charlas" }
     ]
