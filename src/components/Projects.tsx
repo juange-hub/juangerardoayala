@@ -1,8 +1,13 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { Users, MapPin, Calendar, Target, Youtube, ExternalLink, MessageCircle, Mail } from "lucide-react";
+import { Users, MapPin, Calendar, Target, Youtube, ExternalLink, MessageCircle, Mail, Images } from "lucide-react";
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import jornadasFlautaImg from "@/assets/jornadas-flauta.jpg";
+import charlaBuffetCrampon from "@/assets/jornadas/charla-buffet-crampon.jpg";
+import charlaAdriano from "@/assets/jornadas/charla-adriano-calcagno.jpg";
+import charlaAudiencia from "@/assets/jornadas/charla-audiencia.jpg";
+import charlaBuffetCrampon2 from "@/assets/jornadas/charla-buffet-crampon-2.jpg";
 
 const projects = [
   {
@@ -18,7 +23,13 @@ const projects = [
     ],
     tags: ["Masterclass", "Taller", "Viento Madera"],
     sponsors: ["Powell Flutes", "Orquesta Sinfónica Nacional del Paraguay", "Sponsor Anónimo"],
-    videos: []
+    videos: [],
+    gallery: [
+      { src: charlaBuffetCrampon, alt: "Charla Buffet Crampon" },
+      { src: charlaBuffetCrampon2, alt: "Taller de mantenimiento instrumental" },
+      { src: charlaAdriano, alt: "Charla del Lic. Adriano Calcagno" },
+      { src: charlaAudiencia, alt: "Audiencia en las charlas" }
+    ]
   },
   {
     title: "Concierto de la Gran Flauta",
@@ -140,6 +151,33 @@ export const Projects = () => {
                     </Badge>
                   ))}
                 </div>
+
+                {project.gallery && project.gallery.length > 0 && (
+                  <div className="pt-4 border-t border-border">
+                    <div className="flex items-center gap-2 mb-3">
+                      <Images className="w-4 h-4 text-primary" />
+                      <span className="text-sm font-semibold text-foreground">Galería del evento</span>
+                    </div>
+                    <Carousel className="w-full" opts={{ loop: true }}>
+                      <CarouselContent>
+                        {project.gallery.map((photo, i) => (
+                          <CarouselItem key={i}>
+                            <div className="aspect-video rounded-md overflow-hidden bg-muted">
+                              <img
+                                src={photo.src}
+                                alt={photo.alt}
+                                className="w-full h-full object-cover"
+                              />
+                            </div>
+                            <p className="text-xs text-muted-foreground mt-1 text-center">{photo.alt}</p>
+                          </CarouselItem>
+                        ))}
+                      </CarouselContent>
+                      <CarouselPrevious className="left-2" />
+                      <CarouselNext className="right-2" />
+                    </Carousel>
+                  </div>
+                )}
 
                 {project.sponsors && project.sponsors.length > 0 && (
                   <div className="pt-2">
