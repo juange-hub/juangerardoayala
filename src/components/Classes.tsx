@@ -62,7 +62,7 @@ export const Classes = () => {
           Clases Particulares
         </h2>
         <p className="text-center text-muted-foreground mb-6 max-w-2xl mx-auto">
-          Clases de flauta con enfoque profesional - Elige el plan que mejor se adapte a tus objetivos musicales
+          Formación integral desde la experiencia orquestal, solista y escénica - Elige el plan que mejor se adapte a tus objetivos musicales
         </p>
 
         {/* Banner de cupos limitados */}
