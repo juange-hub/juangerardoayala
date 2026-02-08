@@ -58,7 +58,7 @@ export const TeachingSection = () => {
             <span className="text-primary">Todos los Niveles y Edades</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Cada estudiante es único. Mi metodología se adapta a tu ritmo de aprendizaje, 
+            Formación integral desde la experiencia orquestal, solista y escénica. Mi metodología se adapta a tu ritmo de aprendizaje, 
             tus metas y tu disponibilidad para que alcances tu máximo potencial musical.
           </p>
         </div>
