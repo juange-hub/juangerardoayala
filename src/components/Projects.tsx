@@ -8,6 +8,10 @@ import charlaBuffetCrampon from "@/assets/jornadas/charla-buffet-crampon.jpg";
 import charlaAdriano from "@/assets/jornadas/charla-adriano-calcagno.jpg";
 import charlaAudiencia from "@/assets/jornadas/charla-audiencia.jpg";
 import charlaBuffetCrampon2 from "@/assets/jornadas/charla-buffet-crampon-2.jpg";
+import matthieuSala from "@/assets/matthieu/clase-magistral-sala.jpg";
+import matthieuAula from "@/assets/matthieu/clase-magistral-aula.jpg";
+import matthieuClase from "@/assets/matthieu/clase-magistral-matthieu.jpg";
+import matthieuGrupo from "@/assets/matthieu/grupo-participantes.jpg";
 
 const projects = [
   {
@@ -65,7 +69,13 @@ const projects = [
     tags: ["Masterclass", "Flauta Traversa", "Internacional", "Gratuito"],
     youtubeId: "Hsa-rCzW_eE",
     sponsors: ["Sociedad Filarmónica de Asunción", "Instituto Cultural Paraguayo Alemán", "Embajada de Alemania en Paraguay"],
-    videos: []
+    videos: [],
+    gallery: [
+      { src: matthieuClase, alt: "Clase magistral con Matthieu Gauci-Ancelin" },
+      { src: matthieuSala, alt: "Clase magistral en el Instituto Cultural Paraguayo Alemán" },
+      { src: matthieuAula, alt: "Clase magistral con estudiantes" },
+      { src: matthieuGrupo, alt: "Grupo de participantes con Matthieu Gauci-Ancelin" }
+    ]
   }
 ];
 
