@@ -89,6 +89,9 @@ export const TeachingSection = () => {
               src={ensenanzaGrupo} 
               alt="Clase grupal de flauta traversa" 
               className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              loading="lazy"
+              width={495}
+              height={330}
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
               <span className="absolute bottom-4 left-4 text-white font-medium">Clases Grupales</span>
@@ -99,6 +102,9 @@ export const TeachingSection = () => {
               src={ensenanzaClase} 
               alt="Enseñanza personalizada de flauta" 
               className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              loading="lazy"
+              width={495}
+              height={330}
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
               <span className="absolute bottom-4 left-4 text-white font-medium">Atención Personalizada</span>
