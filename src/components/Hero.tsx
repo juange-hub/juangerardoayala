@@ -9,12 +9,15 @@ export const Hero = () => {
 
   return (
     <section id="hero" className="relative min-h-screen flex items-end pb-8 md:pb-24 overflow-hidden">
-      <div 
-        className="absolute inset-0 bg-cover bg-center"
-        style={{ 
-          backgroundImage: `url(${heroImage})`,
-        }}
-      >
+      <div className="absolute inset-0">
+        <img 
+          src={heroImage} 
+          alt="Juan Gerardo Ayala - Flautista y Director de Orquesta" 
+          className="w-full h-full object-cover object-center"
+          fetchPriority="high"
+          width={1335}
+          height={940}
+        />
         <div className="absolute inset-0 bg-black/40"></div>
       </div>
       
