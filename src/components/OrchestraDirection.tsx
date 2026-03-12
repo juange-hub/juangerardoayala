@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 
 const OrchestraDirection = () => {
   // Reemplazar con el ID real del video de YouTube
-  const youtubeId = "dQw4w9WgXcQ";
+  const youtubeId = "ZdTEcloOYps";
   const videoTitle = "Dirigiendo Orquesta Comunitaria";
   const videoDescription =
     "Como director de orquesta, lidero agrupaciones comunitarias buscando acercar la música sinfónica a todos los públicos.";
