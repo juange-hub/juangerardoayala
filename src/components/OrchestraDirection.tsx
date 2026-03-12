@@ -4,9 +4,9 @@ import { Button } from "@/components/ui/button";
 const OrchestraDirection = () => {
   // Reemplazar con el ID real del video de YouTube
   const youtubeId = "ZdTEcloOYps";
-  const videoTitle = "Debut con la Orquesta Sinfónica Nacional de Paraguay";
+  const videoTitle = "Debut como Director Invitado — Orquesta Sinfónica Nacional de Paraguay";
   const videoDescription =
-    "Mi debut como director invitado de la Orquesta Sinfónica Nacional de Paraguay. Visitá mi canal de YouTube para ver más presentaciones.";
+    "Debut como Director Invitado — Orquesta Sinfónica Nacional de Paraguay.";
 
   return (
     <section id="direccion" className="py-20 px-4 bg-muted/30">
