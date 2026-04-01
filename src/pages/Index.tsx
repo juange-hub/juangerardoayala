@@ -1,10 +1,31 @@
+import { Header } from "@/components/Header";
+import { Hero } from "@/components/Hero";
+import { TeachingSection } from "@/components/TeachingSection";
+import { Bio } from "@/components/Bio";
+import { Experience } from "@/components/Experience";
+import { Leadership } from "@/components/Leadership";
+import { Projects } from "@/components/Projects";
+import { Multimedia } from "@/components/Multimedia";
+import { OrchestraDirection } from "@/components/OrchestraDirection";
+import { WhyStudy } from "@/components/WhyStudy";
+import { Classes } from "@/components/Classes";
+import { Footer } from "@/components/Footer";
+
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-background text-foreground">
-      <div className="text-center space-y-4">
-        <h1 className="text-4xl font-bold">Juan Gerardo Ayala</h1>
-        <p className="text-lg text-muted-foreground">Sitio en construcción</p>
-      </div>
+    <div className="min-h-screen">
+      <Header />
+      <Hero />
+      <TeachingSection />
+      <Bio />
+      <Experience />
+      <Projects />
+      <OrchestraDirection />
+      <Multimedia />
+      <Leadership />
+      <WhyStudy />
+      <Classes />
+      <Footer />
     </div>
   );
 };
