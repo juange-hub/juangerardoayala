@@ -48,7 +48,7 @@ export const Hero = () => {
               <img
                 src={slide.src}
                 alt={slide.alt}
-                className="w-full h-full object-contain md:object-cover object-top"
+                className={`w-full h-full object-top ${slide.fit === "contain" ? "object-contain" : "object-cover"}`}
                 fetchPriority={idx === 0 ? "high" : "low"}
                 loading={idx === 0 ? "eager" : "lazy"}
               />
