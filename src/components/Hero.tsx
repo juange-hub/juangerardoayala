@@ -32,7 +32,7 @@ export const Hero = () => {
   };
 
   return (
-    <section id="hero" className="relative min-h-screen flex items-end pb-8 md:pb-24 overflow-hidden">
+    <section id="hero" className="relative min-h-screen flex items-end pb-4 md:pb-16 overflow-hidden">
       <div className="absolute inset-0 overflow-hidden">
         <div
           className="flex h-full w-full transition-transform duration-1000 ease-in-out"
@@ -61,7 +61,7 @@ export const Hero = () => {
       </div>
 
       <div className="relative z-10 container mx-auto px-4 text-center">
-        <h1 className="text-5xl md:text-7xl font-bold mt-4 md:mt-6 mb-6 text-primary-foreground animate-fade-in">
+        <h1 className="text-5xl md:text-7xl font-bold mb-6 text-primary-foreground animate-fade-in">
           Juan Gerardo Ayala
         </h1>
         <p className="text-xl md:text-2xl mb-8 text-primary-foreground/90 max-w-2xl mx-auto">
