@@ -14,7 +14,7 @@ const slides = [
   { src: heroFlauta5, alt: "Juan Gerardo Ayala como solista en escenario con orquesta sinfónica", fit: "cover" as const },
 ];
 
-const SLIDE_DURATION = 4500;
+const SLIDE_DURATION = 6000;
 
 export const Hero = () => {
   const [current, setCurrent] = useState(0);
