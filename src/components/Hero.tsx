@@ -32,7 +32,7 @@ export const Hero = () => {
   };
 
   return (
-    <section id="hero" className="relative min-h-screen flex items-end pb-8 md:pb-24 overflow-hidden">
+    <section id="hero" className="relative min-h-screen flex items-end pb-4 md:pb-16 overflow-hidden">
       <div className="absolute inset-0 overflow-hidden">
         <div
           className="flex h-full w-full transition-transform duration-1000 ease-in-out"
