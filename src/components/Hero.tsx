@@ -6,10 +6,10 @@ import heroFlauta2 from "@/assets/hero-flauta-2.jpg";
 import heroFlauta3 from "@/assets/hero-flauta-3.jpg";
 
 const slides = [
-  { src: heroDirector, alt: "Juan Gerardo Ayala - Director de Orquesta" },
-  { src: heroFlauta1, alt: "Juan Gerardo Ayala interpretando flauta con orquesta" },
-  { src: heroFlauta2, alt: "Juan Gerardo Ayala como flautista solista" },
-  { src: heroFlauta3, alt: "Juan Gerardo Ayala saludando al público tras concierto" },
+  { src: heroDirector, alt: "Juan Gerardo Ayala - Director de Orquesta", fit: "contain" as const },
+  { src: heroFlauta1, alt: "Juan Gerardo Ayala interpretando flauta con orquesta", fit: "cover" as const },
+  { src: heroFlauta2, alt: "Juan Gerardo Ayala como flautista solista", fit: "cover" as const },
+  { src: heroFlauta3, alt: "Juan Gerardo Ayala saludando al público tras concierto", fit: "cover" as const },
 ];
 
 const SLIDE_DURATION = 4500;
@@ -42,13 +42,13 @@ export const Hero = () => {
           {slides.map((slide, idx) => (
             <div
               key={idx}
-              className="h-full relative"
+              className="h-full relative bg-primary"
               style={{ width: `${100 / slides.length}%` }}
             >
               <img
                 src={slide.src}
                 alt={slide.alt}
-                className="w-full h-full object-cover object-top"
+                className={`w-full h-full object-top ${slide.fit === "contain" ? "object-contain" : "object-cover"}`}
                 fetchPriority={idx === 0 ? "high" : "low"}
                 loading={idx === 0 ? "eager" : "lazy"}
               />
