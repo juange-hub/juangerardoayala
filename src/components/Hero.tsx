@@ -42,13 +42,13 @@ export const Hero = () => {
           {slides.map((slide, idx) => (
             <div
               key={idx}
-              className="h-full relative"
+              className="h-full relative bg-primary"
               style={{ width: `${100 / slides.length}%` }}
             >
               <img
                 src={slide.src}
                 alt={slide.alt}
-                className="w-full h-full object-cover object-top"
+                className="w-full h-full object-contain md:object-cover object-top"
                 fetchPriority={idx === 0 ? "high" : "low"}
                 loading={idx === 0 ? "eager" : "lazy"}
               />
