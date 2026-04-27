@@ -26,7 +26,7 @@ export const Hero = () => {
           Juan Gerardo Ayala
         </h1>
         <p className="text-xl md:text-2xl mb-8 text-primary-foreground/90 max-w-2xl mx-auto">
-          Flautista Solista y Director de Orquesta
+          Flautista y Director de Orquesta
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Button 
