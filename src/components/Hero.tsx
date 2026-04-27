@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import heroImage from "@/assets/hero-flautista-editada.jpg";
+import heroImage from "@/assets/hero-director.jpg";
 
 export const Hero = () => {
   const scrollToSection = (id: string) => {
@@ -13,10 +13,10 @@ export const Hero = () => {
         <img 
           src={heroImage} 
           alt="Juan Gerardo Ayala - Flautista y Director de Orquesta" 
-          className="w-full h-full object-cover object-center"
+          className="w-full h-full object-cover object-top"
           fetchPriority="high"
-          width={1335}
-          height={940}
+          width={770}
+          height={513}
         />
         <div className="absolute inset-0 bg-black/40"></div>
       </div>
