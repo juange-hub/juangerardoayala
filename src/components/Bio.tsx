@@ -72,10 +72,15 @@ export const Bio = () => {
           </p>
 
           <p className="text-lg text-muted-foreground leading-relaxed">
-            Su formación en el podio incluye una activa participación en cursos de dirección con destacados maestros como{" "}
-            <span className="text-foreground font-medium">Lior Shambadal, Osvaldo Ferreira, Craig Fuchs, Dominique Fanal, León Burke, Jooyong Ann</span>{" "}
-            y{" "}
-            <span className="text-foreground font-medium">Diego Sánchez Haase</span>.
+            Su trayectoria internacional incluye giras por Europa, Asia y América, destacando su participación en los{" "}
+            <span className="text-foreground font-medium">American Music Awards (2012)</span>{" "}
+            y su designación como{" "}
+            <span className="text-primary font-semibold">"Artista por la Paz" de la UNESCO (2016)</span>{" "}
+            junto al ensamble H2O. Ha integrado agrupaciones de prestigio como el{" "}
+            <span className="text-foreground font-medium">Ensamble Zípoli</span>, el{" "}
+            <span className="text-foreground font-medium">Quinteto de Viento Madera de la OSN</span>{" "}
+            y la{" "}
+            <span className="text-foreground font-medium">Orquesta del Congreso de la Nación</span>, manteniendo siempre el compromiso de evolucionar en cada ámbito de su vida profesional.
           </p>
         </div>
 
