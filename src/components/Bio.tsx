@@ -38,36 +38,44 @@ export const Bio = () => {
         
         <div className="max-w-4xl mx-auto mb-16 space-y-6">
           <p className="text-lg text-muted-foreground leading-relaxed">
-            Inició su formación musical en la ciudad de Carapeguá, Paraguay, gracias a becas del proyecto 
-            <span className="text-foreground font-medium"> Sonidos de la Tierra</span> (2004). Continuó sus estudios 
-            con los profesores Simón Santander, Anina Federico, Adriana Aquino y Jorge de la Vega.
-          </p>
-          
-          <p className="text-lg text-muted-foreground leading-relaxed">
-            Posee una amplia trayectoria como flautista solista e integrante de ensambles, con presentaciones 
-            en Paraguay y en diversos países de <span className="text-foreground font-medium">Europa, Asia y América</span>.
+            La trayectoria de Juan Gerardo Ayala tiene su raíz en la ciudad de{" "}
+            <span className="text-foreground font-medium">Carapeguá</span>. Su vínculo con la música comenzó en 2004 gracias al proyecto{" "}
+            <span className="text-foreground font-medium">Sonidos de la Tierra</span>, una oportunidad que le permitió descubrir la flauta traversa y que transformó su horizonte de vida. A través de las primeras becas de este programa, inició sus estudios en Asunción con el{" "}
+            <span className="text-foreground font-medium">Prof. Simón Santander</span>, marcando el inicio de un camino de formación constante que lo llevaría a los principales escenarios del país y del exterior.
           </p>
 
           <p className="text-lg text-muted-foreground leading-relaxed">
-            Ganador del <span className="text-primary font-semibold">Primer Puesto en el Concurso de Dirección Orquestal 
-            "Carlos Lara Bareiro"</span>, debutando con la Orquesta Sinfónica Nacional del Paraguay en 2024. 
-            En 2025 realiza su debut como director invitado de la Orquesta Sinfónica de la Ciudad de Asunción.
+            Actualmente, se desempeña como{" "}
+            <span className="text-primary font-semibold">Flautista Solista</span>{" "}
+            de las tres instituciones sinfónicas más importantes de la capital: la{" "}
+            <span className="text-foreground font-medium">Orquesta Sinfónica Nacional (OSN)</span>, la{" "}
+            <span className="text-foreground font-medium">Orquesta Sinfónica de la Ciudad de Asunción (OSCA)</span>{" "}
+            y la{" "}
+            <span className="text-foreground font-medium">Orquesta de Cámara Municipal de Asunción (OCMA)</span>. Obtuvo estas posiciones mediante concursos públicos de oposición mientras realizaba su formación académica en la Universidad Nacional de Asunción.
           </p>
 
           <p className="text-lg text-muted-foreground leading-relaxed">
-            Ha participado en cursos de dirección con destacados maestros como Craig Fuchs, Dominique Fanal, 
-            León Burke, Jooyong Ann, Osvaldo Ferreira, Lior Shambadal y Diego Sánchez Haase.
+            Con una mentalidad orientada al crecimiento integral, ha perfeccionado su técnica con los maestros{" "}
+            <span className="text-foreground font-medium">Melina Federico</span>,{" "}
+            <span className="text-foreground font-medium">Adriana Aquino</span>{" "}
+            y{" "}
+            <span className="text-foreground font-medium">Jorge de la Vega</span>. Su búsqueda de madurez artística lo ha llevado a participar en cursos y clases magistrales con referentes internacionales como{" "}
+            <span className="text-foreground font-medium">Dejan Gavric, Matthieu Gauci-Ancelin, Edson Beltrami, James Hall, Michael Faust</span>{" "}
+            y{" "}
+            <span className="text-foreground font-medium">Lars Nilsson</span>, realizando estancias de perfeccionamiento en Argentina, Brasil, España y Alemania.
           </p>
 
           <p className="text-lg text-muted-foreground leading-relaxed">
-            Desde 2018 dirige en repetidas ocasiones, en calidad de director invitado, a la 
-            <span className="text-foreground font-medium"> Orquesta de Cámara Municipal de Asunción</span>, 
-            con una participación activa en su crecimiento musical y proyección artística.
+            Como director de orquesta, fue galardonado con el{" "}
+            <span className="text-primary font-semibold">Primer Puesto del Premio de Dirección Orquestal "Carlos Lara Bareiro"</span>, debutando con la Orquesta Sinfónica Nacional en 2024. En 2025, realizó su debut como director invitado de la Orquesta Sinfónica de la Ciudad de Asunción. Desde 2018, colabora regularmente como director invitado de la{" "}
+            <span className="text-foreground font-medium">Orquesta de Cámara Municipal de Asunción</span>, participando activamente en su proyección artística.
           </p>
 
           <p className="text-lg text-muted-foreground leading-relaxed">
-            Designado <span className="text-primary font-semibold">Artista para la Paz de la UNESCO</span> (2016-2018) 
-            con la Orquesta H2O Sonidos de la Tierra.
+            Su formación en el podio incluye una activa participación en cursos de dirección con destacados maestros como{" "}
+            <span className="text-foreground font-medium">Lior Shambadal, Osvaldo Ferreira, Craig Fuchs, Dominique Fanal, León Burke, Jooyong Ann</span>{" "}
+            y{" "}
+            <span className="text-foreground font-medium">Diego Sánchez Haase</span>.
           </p>
         </div>
 
