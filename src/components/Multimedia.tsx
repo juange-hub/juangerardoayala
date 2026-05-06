@@ -66,29 +66,6 @@ const Multimedia = () => {
           ))}
         </div>
 
-        {/* Community Section */}
-        <div className="border-t border-border pt-12">
-          <h3 className="text-2xl font-semibold text-center mb-6 text-foreground">
-            Comunidad Flautística
-          </h3>
-          <p className="text-center text-muted-foreground mb-6 max-w-2xl mx-auto">
-            Gestiono un espacio dedicado a compartir actividades, eventos, masterclasses y recursos para flautistas en Paraguay
-          </p>
-          
-          <a
-            href={communityLink.url}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="block max-w-md mx-auto"
-          >
-            <Card className={`p-6 text-center transition-all duration-300 ${communityLink.color} hover:shadow-lg bg-primary/5 border-primary/20`}>
-              <communityLink.icon className="w-12 h-12 mx-auto mb-3 text-primary" />
-              <h3 className="font-bold text-xl text-foreground mb-1">{communityLink.name}</h3>
-              <p className="text-sm text-primary mb-2">{communityLink.handle}</p>
-              <p className="text-sm text-muted-foreground">{communityLink.description}</p>
-            </Card>
-          </a>
-        </div>
       </div>
     </section>
   );
