@@ -26,15 +26,6 @@ const Multimedia = () => {
     }
   ];
 
-  const communityLink = {
-    name: "Flautistas PY",
-    handle: "@flautistas_py",
-    icon: Instagram,
-    url: "https://www.instagram.com/flautistas_py",
-    color: "hover:text-[#E4405F] hover:border-[#E4405F]/30",
-    description: "Actividades y eventos para flautistas en Paraguay"
-  };
-
   return (
     <section id="multimedia" className="py-20 px-4 bg-background">
       <div className="max-w-4xl mx-auto">
