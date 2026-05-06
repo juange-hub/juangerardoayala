@@ -26,24 +26,15 @@ const Multimedia = () => {
     }
   ];
 
-  const communityLink = {
-    name: "Flautistas PY",
-    handle: "@flautistas_py",
-    icon: Instagram,
-    url: "https://www.instagram.com/flautistas_py",
-    color: "hover:text-[#E4405F] hover:border-[#E4405F]/30",
-    description: "Actividades y eventos para flautistas en Paraguay"
-  };
-
   return (
     <section id="multimedia" className="py-20 px-4 bg-background">
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold mb-4 text-foreground">
-            Redes y Comunidad
+            Redes Sociales
           </h2>
           <p className="text-muted-foreground text-lg">
-            Sígueme en redes sociales y conecta con la comunidad flautística
+            Sígueme en redes sociales para contenido musical y actualizaciones
           </p>
         </div>
 
@@ -66,29 +57,6 @@ const Multimedia = () => {
           ))}
         </div>
 
-        {/* Community Section */}
-        <div className="border-t border-border pt-12">
-          <h3 className="text-2xl font-semibold text-center mb-6 text-foreground">
-            Comunidad Flautística
-          </h3>
-          <p className="text-center text-muted-foreground mb-6 max-w-2xl mx-auto">
-            Gestiono un espacio dedicado a compartir actividades, eventos, masterclasses y recursos para flautistas en Paraguay
-          </p>
-          
-          <a
-            href={communityLink.url}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="block max-w-md mx-auto"
-          >
-            <Card className={`p-6 text-center transition-all duration-300 ${communityLink.color} hover:shadow-lg bg-primary/5 border-primary/20`}>
-              <communityLink.icon className="w-12 h-12 mx-auto mb-3 text-primary" />
-              <h3 className="font-bold text-xl text-foreground mb-1">{communityLink.name}</h3>
-              <p className="text-sm text-primary mb-2">{communityLink.handle}</p>
-              <p className="text-sm text-muted-foreground">{communityLink.description}</p>
-            </Card>
-          </a>
-        </div>
       </div>
     </section>
   );
