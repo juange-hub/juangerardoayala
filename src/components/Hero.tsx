@@ -1,13 +1,11 @@
 import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
-import heroFlauta1 from "@/assets/hero-flauta-1.jpg";
 import heroFlauta2 from "@/assets/hero-flauta-2.jpg";
 import heroFlauta3 from "@/assets/hero-flauta-3.jpg";
 import heroFlauta4 from "@/assets/hero-flauta-4.jpg";
 import heroFlauta5 from "@/assets/hero-flauta-5.jpg";
 
 const slides = [
-  { src: heroFlauta1, alt: "Juan Gerardo Ayala interpretando flauta con orquesta", fit: "cover" as const },
   { src: heroFlauta2, alt: "Juan Gerardo Ayala como flautista solista", fit: "cover" as const },
   { src: heroFlauta3, alt: "Juan Gerardo Ayala saludando al público tras concierto", fit: "cover" as const },
   { src: heroFlauta4, alt: "Juan Gerardo Ayala interpretando flauta solista con orquesta", fit: "cover" as const },
