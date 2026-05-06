@@ -40,10 +40,10 @@ const Multimedia = () => {
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold mb-4 text-foreground">
-            Redes y Comunidad
+            Redes Sociales
           </h2>
           <p className="text-muted-foreground text-lg">
-            Sígueme en redes sociales y conecta con la comunidad flautística
+            Sígueme en redes sociales para contenido musical y actualizaciones
           </p>
         </div>
 
