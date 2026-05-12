@@ -1,17 +1,49 @@
 import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import heroFlauta2 from "@/assets/hero-flauta-2.jpg";
+import heroFlauta2_640 from "@/assets/hero-flauta-2-640.jpg";
+import heroFlauta2_1024 from "@/assets/hero-flauta-2-1024.jpg";
+import heroFlauta2_1600 from "@/assets/hero-flauta-2-1600.jpg";
 import heroFlauta3 from "@/assets/hero-flauta-3.jpg";
+import heroFlauta3_640 from "@/assets/hero-flauta-3-640.jpg";
+import heroFlauta3_1024 from "@/assets/hero-flauta-3-1024.jpg";
+import heroFlauta3_1600 from "@/assets/hero-flauta-3-1600.jpg";
 import heroFlauta4 from "@/assets/hero-flauta-4.jpg";
+import heroFlauta4_640 from "@/assets/hero-flauta-4-640.jpg";
+import heroFlauta4_1024 from "@/assets/hero-flauta-4-1024.jpg";
+import heroFlauta4_1600 from "@/assets/hero-flauta-4-1600.jpg";
 import heroFlauta5 from "@/assets/hero-flauta-5.jpg";
+import heroFlauta5_640 from "@/assets/hero-flauta-5-640.jpg";
+import heroFlauta5_1024 from "@/assets/hero-flauta-5-1024.jpg";
+import heroFlauta5_1600 from "@/assets/hero-flauta-5-1600.jpg";
+
+const buildSrcSet = (s640: string, s1024: string, s1600: string) =>
+  `${s640} 640w, ${s1024} 1024w, ${s1600} 1600w`;
 
 const slides = [
-  { src: heroFlauta2, alt: "Juan Gerardo Ayala como flautista solista", fit: "cover" as const },
-  { src: heroFlauta3, alt: "Juan Gerardo Ayala saludando al público tras concierto", fit: "cover" as const },
-  { src: heroFlauta4, alt: "Juan Gerardo Ayala interpretando flauta solista con orquesta", fit: "cover" as const },
-  { src: heroFlauta5, alt: "Juan Gerardo Ayala como solista en escenario con orquesta sinfónica", fit: "cover" as const },
+  {
+    src: heroFlauta2,
+    srcSet: buildSrcSet(heroFlauta2_640, heroFlauta2_1024, heroFlauta2_1600),
+    alt: "Juan Gerardo Ayala como flautista solista",
+  },
+  {
+    src: heroFlauta3,
+    srcSet: buildSrcSet(heroFlauta3_640, heroFlauta3_1024, heroFlauta3_1600),
+    alt: "Juan Gerardo Ayala saludando al público tras concierto",
+  },
+  {
+    src: heroFlauta4,
+    srcSet: buildSrcSet(heroFlauta4_640, heroFlauta4_1024, heroFlauta4_1600),
+    alt: "Juan Gerardo Ayala interpretando flauta solista con orquesta",
+  },
+  {
+    src: heroFlauta5,
+    srcSet: buildSrcSet(heroFlauta5_640, heroFlauta5_1024, heroFlauta5_1600),
+    alt: "Juan Gerardo Ayala como solista en escenario con orquesta sinfónica",
+  },
 ];
 
+const SLIDE_SIZES = "(max-width: 640px) 640px, (max-width: 1024px) 1024px, 1600px";
 const SLIDE_DURATION = 6000;
 
 export const Hero = () => {
@@ -47,10 +79,13 @@ export const Hero = () => {
             >
               <img
                 src={slide.src}
+                srcSet={slide.srcSet}
+                sizes={SLIDE_SIZES}
                 alt={slide.alt}
                 className="w-full h-full object-top object-cover"
                 fetchPriority={idx === 0 ? "high" : "low"}
                 loading={idx === 0 ? "eager" : "lazy"}
+                decoding="async"
               />
             </div>
           ))}
