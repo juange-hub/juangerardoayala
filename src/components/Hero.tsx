@@ -139,7 +139,7 @@ export const Hero = () => {
         type="button"
         onClick={next}
         aria-label="Siguiente imagen"
-        className="hidden md:flex absolute right-4 lg:right-8 top-1/2 -translate-y-1/2 z-20 h-12 w-12 items-center justify-center rounded-full bg-background/20 backdrop-blur-sm text-primary-foreground hover:bg-background/40 transition-colors"
+        className="hidden lg:flex absolute right-4 lg:right-8 top-1/2 -translate-y-1/2 z-20 h-12 w-12 items-center justify-center rounded-full bg-background/20 backdrop-blur-sm text-primary-foreground hover:bg-background/40 transition-colors"
       >
         <ChevronRight className="h-6 w-6" />
       </button>
