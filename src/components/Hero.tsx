@@ -1,4 +1,5 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import heroFlauta2 from "@/assets/hero-flauta-2.jpg";
 import heroFlauta2_640 from "@/assets/hero-flauta-2-640.jpg";
@@ -48,13 +49,40 @@ const SLIDE_DURATION = 6000;
 
 export const Hero = () => {
   const [current, setCurrent] = useState(0);
+  const [isPaused, setIsPaused] = useState(false);
+  const touchStartX = useRef<number | null>(null);
+  const touchDeltaX = useRef(0);
+
+  const goTo = (idx: number) =>
+    setCurrent(((idx % slides.length) + slides.length) % slides.length);
+  const next = () => goTo(current + 1);
+  const prev = () => goTo(current - 1);
 
   useEffect(() => {
+    if (isPaused) return;
     const id = setInterval(() => {
-      setCurrent((prev) => (prev + 1) % slides.length);
+      setCurrent((p) => (p + 1) % slides.length);
     }, SLIDE_DURATION);
     return () => clearInterval(id);
-  }, []);
+  }, [isPaused, current]);
+
+  const onTouchStart = (e: React.TouchEvent) => {
+    touchStartX.current = e.touches[0].clientX;
+    touchDeltaX.current = 0;
+    setIsPaused(true);
+  };
+  const onTouchMove = (e: React.TouchEvent) => {
+    if (touchStartX.current === null) return;
+    touchDeltaX.current = e.touches[0].clientX - touchStartX.current;
+  };
+  const onTouchEnd = () => {
+    const threshold = 50;
+    if (touchDeltaX.current > threshold) prev();
+    else if (touchDeltaX.current < -threshold) next();
+    touchStartX.current = null;
+    touchDeltaX.current = 0;
+    setIsPaused(false);
+  };
 
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
@@ -62,7 +90,13 @@ export const Hero = () => {
   };
 
   return (
-    <section id="hero" className="relative min-h-screen flex items-end pb-4 md:pb-16 overflow-hidden">
+    <section
+      id="hero"
+      className="relative min-h-screen flex items-end pb-4 md:pb-16 overflow-hidden"
+      onTouchStart={onTouchStart}
+      onTouchMove={onTouchMove}
+      onTouchEnd={onTouchEnd}
+    >
       <div className="absolute inset-0 overflow-hidden">
         <div
           className="flex h-full w-full transition-transform duration-1000 ease-in-out"
@@ -92,6 +126,23 @@ export const Hero = () => {
         </div>
         <div className="absolute inset-0 bg-black/40"></div>
       </div>
+
+      <button
+        type="button"
+        onClick={prev}
+        aria-label="Imagen anterior"
+        className="hidden md:flex absolute left-4 lg:left-8 top-1/2 -translate-y-1/2 z-20 h-12 w-12 items-center justify-center rounded-full bg-background/20 backdrop-blur-sm text-primary-foreground hover:bg-background/40 transition-colors"
+      >
+        <ChevronLeft className="h-6 w-6" />
+      </button>
+      <button
+        type="button"
+        onClick={next}
+        aria-label="Siguiente imagen"
+        className="hidden md:flex absolute right-4 lg:right-8 top-1/2 -translate-y-1/2 z-20 h-12 w-12 items-center justify-center rounded-full bg-background/20 backdrop-blur-sm text-primary-foreground hover:bg-background/40 transition-colors"
+      >
+        <ChevronRight className="h-6 w-6" />
+      </button>
 
       <div className="relative z-10 container mx-auto px-4 text-center">
         <h1 className="text-5xl md:text-7xl font-bold mb-6 text-primary-foreground animate-fade-in">
