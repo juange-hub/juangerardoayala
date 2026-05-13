@@ -1,4 +1,5 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import heroFlauta2 from "@/assets/hero-flauta-2.jpg";
 import heroFlauta2_640 from "@/assets/hero-flauta-2-640.jpg";
@@ -48,13 +49,40 @@ const SLIDE_DURATION = 6000;
 
 export const Hero = () => {
   const [current, setCurrent] = useState(0);
+  const [isPaused, setIsPaused] = useState(false);
+  const touchStartX = useRef<number | null>(null);
+  const touchDeltaX = useRef(0);
+
+  const goTo = (idx: number) =>
+    setCurrent(((idx % slides.length) + slides.length) % slides.length);
+  const next = () => goTo(current + 1);
+  const prev = () => goTo(current - 1);
 
   useEffect(() => {
+    if (isPaused) return;
     const id = setInterval(() => {
-      setCurrent((prev) => (prev + 1) % slides.length);
+      setCurrent((p) => (p + 1) % slides.length);
     }, SLIDE_DURATION);
     return () => clearInterval(id);
-  }, []);
+  }, [isPaused, current]);
+
+  const onTouchStart = (e: React.TouchEvent) => {
+    touchStartX.current = e.touches[0].clientX;
+    touchDeltaX.current = 0;
+    setIsPaused(true);
+  };
+  const onTouchMove = (e: React.TouchEvent) => {
+    if (touchStartX.current === null) return;
+    touchDeltaX.current = e.touches[0].clientX - touchStartX.current;
+  };
+  const onTouchEnd = () => {
+    const threshold = 50;
+    if (touchDeltaX.current > threshold) prev();
+    else if (touchDeltaX.current < -threshold) next();
+    touchStartX.current = null;
+    touchDeltaX.current = 0;
+    setIsPaused(false);
+  };
 
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
