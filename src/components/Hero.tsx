@@ -90,7 +90,13 @@ export const Hero = () => {
   };
 
   return (
-    <section id="hero" className="relative min-h-screen flex items-end pb-4 md:pb-16 overflow-hidden">
+    <section
+      id="hero"
+      className="relative min-h-screen flex items-end pb-4 md:pb-16 overflow-hidden"
+      onTouchStart={onTouchStart}
+      onTouchMove={onTouchMove}
+      onTouchEnd={onTouchEnd}
+    >
       <div className="absolute inset-0 overflow-hidden">
         <div
           className="flex h-full w-full transition-transform duration-1000 ease-in-out"
@@ -120,6 +126,23 @@ export const Hero = () => {
         </div>
         <div className="absolute inset-0 bg-black/40"></div>
       </div>
+
+      <button
+        type="button"
+        onClick={prev}
+        aria-label="Imagen anterior"
+        className="hidden md:flex absolute left-4 lg:left-8 top-1/2 -translate-y-1/2 z-20 h-12 w-12 items-center justify-center rounded-full bg-background/20 backdrop-blur-sm text-primary-foreground hover:bg-background/40 transition-colors"
+      >
+        <ChevronLeft className="h-6 w-6" />
+      </button>
+      <button
+        type="button"
+        onClick={next}
+        aria-label="Siguiente imagen"
+        className="hidden md:flex absolute right-4 lg:right-8 top-1/2 -translate-y-1/2 z-20 h-12 w-12 items-center justify-center rounded-full bg-background/20 backdrop-blur-sm text-primary-foreground hover:bg-background/40 transition-colors"
+      >
+        <ChevronRight className="h-6 w-6" />
+      </button>
 
       <div className="relative z-10 container mx-auto px-4 text-center">
         <h1 className="text-5xl md:text-7xl font-bold mb-6 text-primary-foreground animate-fade-in">
