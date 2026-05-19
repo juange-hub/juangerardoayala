@@ -5,10 +5,6 @@ import heroFlauta2 from "@/assets/hero-flauta-2.jpg";
 import heroFlauta2_640 from "@/assets/hero-flauta-2-640.jpg";
 import heroFlauta2_1024 from "@/assets/hero-flauta-2-1024.jpg";
 import heroFlauta2_1600 from "@/assets/hero-flauta-2-1600.jpg";
-import heroFlauta3 from "@/assets/hero-flauta-3.jpg";
-import heroFlauta3_640 from "@/assets/hero-flauta-3-640.jpg";
-import heroFlauta3_1024 from "@/assets/hero-flauta-3-1024.jpg";
-import heroFlauta3_1600 from "@/assets/hero-flauta-3-1600.jpg";
 import heroFlauta4 from "@/assets/hero-flauta-4.jpg";
 import heroFlauta4_640 from "@/assets/hero-flauta-4-640.jpg";
 import heroFlauta4_1024 from "@/assets/hero-flauta-4-1024.jpg";
@@ -28,13 +24,6 @@ const slides = [
     alt: "Juan Gerardo Ayala flautista, retrato con flauta junto a ventanal",
     // Sujeto centrado-derecha, rostro arriba
     objectPosition: "65% 20%",
-  },
-  {
-    src: heroFlauta3,
-    srcSet: buildSrcSet(heroFlauta3_640, heroFlauta3_1024, heroFlauta3_1600),
-    alt: "Juan Gerardo Ayala posando con flauta en sala de conciertos",
-    // Sujeto en el extremo derecho: lo movemos para que no quede tapado por el título
-    objectPosition: "78% 25%",
   },
   {
     src: heroFlauta4,
