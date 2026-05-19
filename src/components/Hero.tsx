@@ -122,7 +122,8 @@ export const Hero = () => {
                 srcSet={slide.srcSet}
                 sizes={SLIDE_SIZES}
                 alt={slide.alt}
-                className="w-full h-full object-top object-cover"
+                style={{ objectPosition: slide.objectPosition ?? "center top" }}
+                className="w-full h-full object-cover"
                 fetchPriority={idx === 0 ? "high" : "low"}
                 loading={idx === 0 ? "eager" : "lazy"}
                 decoding="async"
