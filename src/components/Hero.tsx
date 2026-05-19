@@ -26,21 +26,27 @@ const slides = [
     src: heroFlauta2,
     srcSet: buildSrcSet(heroFlauta2_640, heroFlauta2_1024, heroFlauta2_1600),
     alt: "Juan Gerardo Ayala flautista, retrato con flauta junto a ventanal",
+    // Sujeto centrado-derecha, rostro arriba
+    objectPosition: "65% 20%",
   },
   {
     src: heroFlauta3,
     srcSet: buildSrcSet(heroFlauta3_640, heroFlauta3_1024, heroFlauta3_1600),
     alt: "Juan Gerardo Ayala posando con flauta en sala de conciertos",
+    // Sujeto en el extremo derecho: lo movemos para que no quede tapado por el título
+    objectPosition: "78% 25%",
   },
   {
     src: heroFlauta4,
     srcSet: buildSrcSet(heroFlauta4_640, heroFlauta4_1024, heroFlauta4_1600),
     alt: "Juan Gerardo Ayala flautista en blanco y negro en teatro",
+    objectPosition: "60% 25%",
   },
   {
     src: heroFlauta5,
     srcSet: buildSrcSet(heroFlauta5_640, heroFlauta5_1024, heroFlauta5_1600),
     alt: "Juan Gerardo Ayala como director de orquesta con batuta",
+    objectPosition: "55% 30%",
   },
 ];
 
@@ -116,7 +122,8 @@ export const Hero = () => {
                 srcSet={slide.srcSet}
                 sizes={SLIDE_SIZES}
                 alt={slide.alt}
-                className="w-full h-full object-top object-cover"
+                style={{ objectPosition: slide.objectPosition ?? "center top" }}
+                className="w-full h-full object-cover"
                 fetchPriority={idx === 0 ? "high" : "low"}
                 loading={idx === 0 ? "eager" : "lazy"}
                 decoding="async"
