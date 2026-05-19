@@ -26,13 +26,6 @@ const slides = [
     objectPosition: "65% 20%",
   },
   {
-    src: heroFlauta3,
-    srcSet: buildSrcSet(heroFlauta3_640, heroFlauta3_1024, heroFlauta3_1600),
-    alt: "Juan Gerardo Ayala posando con flauta en sala de conciertos",
-    // Sujeto en el extremo derecho: lo movemos para que no quede tapado por el título
-    objectPosition: "78% 25%",
-  },
-  {
     src: heroFlauta4,
     srcSet: buildSrcSet(heroFlauta4_640, heroFlauta4_1024, heroFlauta4_1600),
     alt: "Juan Gerardo Ayala flautista en blanco y negro en teatro",
