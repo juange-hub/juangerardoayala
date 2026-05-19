@@ -25,22 +25,22 @@ const slides = [
   {
     src: heroFlauta2,
     srcSet: buildSrcSet(heroFlauta2_640, heroFlauta2_1024, heroFlauta2_1600),
-    alt: "Juan Gerardo Ayala como flautista solista",
+    alt: "Juan Gerardo Ayala flautista, retrato con flauta junto a ventanal",
   },
   {
     src: heroFlauta3,
     srcSet: buildSrcSet(heroFlauta3_640, heroFlauta3_1024, heroFlauta3_1600),
-    alt: "Juan Gerardo Ayala saludando al público tras concierto",
+    alt: "Juan Gerardo Ayala posando con flauta en sala de conciertos",
   },
   {
     src: heroFlauta4,
     srcSet: buildSrcSet(heroFlauta4_640, heroFlauta4_1024, heroFlauta4_1600),
-    alt: "Juan Gerardo Ayala interpretando flauta solista con orquesta",
+    alt: "Juan Gerardo Ayala flautista en blanco y negro en teatro",
   },
   {
     src: heroFlauta5,
     srcSet: buildSrcSet(heroFlauta5_640, heroFlauta5_1024, heroFlauta5_1600),
-    alt: "Juan Gerardo Ayala como solista en escenario con orquesta sinfónica",
+    alt: "Juan Gerardo Ayala como director de orquesta con batuta",
   },
 ];
 
