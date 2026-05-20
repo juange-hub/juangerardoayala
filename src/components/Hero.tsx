@@ -13,10 +13,6 @@ import heroFlauta5 from "@/assets/hero-flauta-5.jpg";
 import heroFlauta5_640 from "@/assets/hero-flauta-5-640.jpg";
 import heroFlauta5_1024 from "@/assets/hero-flauta-5-1024.jpg";
 import heroFlauta5_1600 from "@/assets/hero-flauta-5-1600.jpg";
-import heroFlauta6 from "@/assets/hero-flauta-6.jpg";
-import heroFlauta6_640 from "@/assets/hero-flauta-6-640.jpg";
-import heroFlauta6_1024 from "@/assets/hero-flauta-6-1024.jpg";
-import heroFlauta6_1600 from "@/assets/hero-flauta-6-1600.jpg";
 
 const buildSrcSet = (s640: string, s1024: string, s1600: string) =>
   `${s640} 640w, ${s1024} 1024w, ${s1600} 1600w`;
@@ -42,13 +38,6 @@ const slides = [
     alt: "Juan Gerardo Ayala como director de orquesta con batuta",
     objectPosition: "55% 30%",
     objectPositionMobile: "50% 25%",
-  },
-  {
-    src: heroFlauta6,
-    srcSet: buildSrcSet(heroFlauta6_640, heroFlauta6_1024, heroFlauta6_1600),
-    alt: "Juan Gerardo Ayala flautista en sala de conciertos, blanco y negro",
-    objectPosition: "85% 35%",
-    objectPositionMobile: "75% 30%",
   },
 ];
 
