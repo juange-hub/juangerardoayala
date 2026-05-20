@@ -7,6 +7,7 @@ const navItems = [
   { label: "Clases", href: "#clases" },
   { label: "Bio", href: "#bio" },
   { label: "Trayectoria", href: "#experiencia" },
+  { label: "Galería", href: "#galeria" },
   { label: "Liderazgo", href: "#liderazgo" },
   { label: "Contacto", href: "#contacto" },
 ];
