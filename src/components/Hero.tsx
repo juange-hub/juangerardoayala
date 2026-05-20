@@ -26,27 +26,29 @@ const slides = [
     src: heroFlauta2,
     srcSet: buildSrcSet(heroFlauta2_640, heroFlauta2_1024, heroFlauta2_1600),
     alt: "Juan Gerardo Ayala flautista, retrato con flauta junto a ventanal",
-    // Sujeto centrado-derecha, rostro arriba
     objectPosition: "65% 20%",
+    objectPositionMobile: "62% 25%",
   },
   {
     src: heroFlauta4,
     srcSet: buildSrcSet(heroFlauta4_640, heroFlauta4_1024, heroFlauta4_1600),
     alt: "Juan Gerardo Ayala flautista en blanco y negro en teatro",
     objectPosition: "60% 25%",
+    objectPositionMobile: "55% 25%",
   },
   {
     src: heroFlauta5,
     srcSet: buildSrcSet(heroFlauta5_640, heroFlauta5_1024, heroFlauta5_1600),
     alt: "Juan Gerardo Ayala como director de orquesta con batuta",
     objectPosition: "55% 30%",
+    objectPositionMobile: "50% 25%",
   },
   {
     src: heroFlauta6,
     srcSet: buildSrcSet(heroFlauta6_640, heroFlauta6_1024, heroFlauta6_1600),
     alt: "Juan Gerardo Ayala flautista en sala de conciertos, blanco y negro",
-    // Rostro a la derecha del encuadre: desplazar para que el texto centrado no lo tape
     objectPosition: "85% 35%",
+    objectPositionMobile: "75% 30%",
   },
 ];
 
@@ -56,8 +58,18 @@ const SLIDE_DURATION = 6000;
 export const Hero = () => {
   const [current, setCurrent] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
   const touchStartX = useRef<number | null>(null);
   const touchDeltaX = useRef(0);
+
+  useEffect(() => {
+    const mq = window.matchMedia("(max-width: 767px)");
+    const update = () => setIsMobile(mq.matches);
+    update();
+    mq.addEventListener("change", update);
+    return () => mq.removeEventListener("change", update);
+  }, []);
+
 
   const goTo = (idx: number) =>
     setCurrent(((idx % slides.length) + slides.length) % slides.length);
@@ -122,7 +134,7 @@ export const Hero = () => {
                 srcSet={slide.srcSet}
                 sizes={SLIDE_SIZES}
                 alt={slide.alt}
-                style={{ objectPosition: slide.objectPosition ?? "center top" }}
+                style={{ objectPosition: (isMobile && slide.objectPositionMobile) || slide.objectPosition || "center top" }}
                 className="w-full h-full object-cover"
                 fetchPriority={idx === 0 ? "high" : "low"}
                 loading={idx === 0 ? "eager" : "lazy"}
@@ -131,7 +143,7 @@ export const Hero = () => {
             </div>
           ))}
         </div>
-        <div className="absolute inset-0 bg-black/40"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-black/10 via-black/30 to-black/75 md:bg-black/40 md:bg-none"></div>
       </div>
 
       <button
