@@ -119,7 +119,7 @@ export const Gallery = () => {
             <button
               key={photo.thumb}
               type="button"
-              onClick={() => setLightbox(photo)}
+              onClick={() => setLightboxIdx(idx)}
               className="group relative mb-3 md:mb-4 block w-full overflow-hidden rounded-lg bg-muted focus:outline-none focus:ring-2 focus:ring-accent break-inside-avoid"
               aria-label={`Ver foto: ${photo.alt}`}
             >
@@ -136,18 +136,45 @@ export const Gallery = () => {
         </div>
       </div>
 
-      <Dialog open={!!lightbox} onOpenChange={(open) => !open && setLightbox(null)}>
+      <Dialog open={!!lightbox} onOpenChange={(open) => !open && setLightboxIdx(null)}>
         <DialogContent className="max-w-5xl p-0 overflow-hidden bg-black border-0">
           <DialogTitle className="sr-only">{lightbox?.alt ?? "Foto"}</DialogTitle>
           {lightbox && (
-            <img
-              src={lightbox.full}
-              alt={lightbox.alt}
-              className="w-full h-auto max-h-[85vh] object-contain"
-            />
+            <div
+              className="relative"
+              onTouchStart={onTouchStart}
+              onTouchEnd={onTouchEnd}
+            >
+              <img
+                src={lightbox.full}
+                alt={lightbox.alt}
+                className="w-full h-auto max-h-[85vh] object-contain select-none"
+                draggable={false}
+              />
+              <button
+                type="button"
+                onClick={goPrev}
+                aria-label="Foto anterior"
+                className="hidden md:flex absolute left-3 top-1/2 -translate-y-1/2 items-center justify-center w-11 h-11 rounded-full bg-black/50 hover:bg-black/70 text-white transition focus:outline-none focus:ring-2 focus:ring-accent"
+              >
+                <ChevronLeft className="w-6 h-6" />
+              </button>
+              <button
+                type="button"
+                onClick={goNext}
+                aria-label="Foto siguiente"
+                className="hidden md:flex absolute right-3 top-1/2 -translate-y-1/2 items-center justify-center w-11 h-11 rounded-full bg-black/50 hover:bg-black/70 text-white transition focus:outline-none focus:ring-2 focus:ring-accent"
+              >
+                <ChevronRight className="w-6 h-6" />
+              </button>
+              <div className="absolute bottom-3 left-1/2 -translate-x-1/2 px-3 py-1 rounded-full bg-black/50 text-white text-xs tracking-wide">
+                {(lightboxIdx ?? 0) + 1} / {photos.length}
+              </div>
+            </div>
           )}
         </DialogContent>
       </Dialog>
+
     </section>
   );
 };
