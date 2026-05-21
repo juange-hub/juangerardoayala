@@ -130,3 +130,17 @@ All colors MUST be HSL.
     }
   }
 }
+
+/* Section tints — alterna fondos claros sutiles para diferenciar secciones.
+   Usa id selectors (mayor especificidad que utilidades de Tailwind). */
+@layer base {
+  section#bio          { background-color: hsl(36 40% 97%); }
+  section#experiencia  { background-color: hsl(220 25% 97%); }
+  section#proyectos    { background-color: hsl(43 50% 96%); }
+  section#direccion    { background-color: hsl(200 30% 96%); }
+  section#galeria      { background-color: hsl(30 35% 97%); }
+  section#multimedia   { background-color: hsl(260 25% 97%); }
+  section#liderazgo    { background-color: hsl(15 40% 97%); }
+  section#clases       { background-color: hsl(160 25% 96%); }
+}
+
