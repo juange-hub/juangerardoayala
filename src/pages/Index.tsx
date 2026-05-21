@@ -11,6 +11,7 @@ import { OrchestraDirection } from "@/components/OrchestraDirection";
 import { WhyStudy } from "@/components/WhyStudy";
 import { Classes } from "@/components/Classes";
 import { Footer } from "@/components/Footer";
+import { FloatingActions } from "@/components/FloatingActions";
 
 const Index = () => {
   return (
@@ -28,6 +29,7 @@ const Index = () => {
       <WhyStudy />
       <Classes />
       <Footer />
+      <FloatingActions />
     </div>
   );
 };
