@@ -69,7 +69,34 @@ const photos: GalleryPhoto[] = [
 ];
 
 export const Gallery = () => {
-  const [lightbox, setLightbox] = useState<GalleryPhoto | null>(null);
+  const [lightboxIdx, setLightboxIdx] = useState<number | null>(null);
+  const touchStartX = useRef<number | null>(null);
+  const lightbox = lightboxIdx !== null ? photos[lightboxIdx] : null;
+
+  const goPrev = () =>
+    setLightboxIdx((i) => (i === null ? i : (i - 1 + photos.length) % photos.length));
+  const goNext = () =>
+    setLightboxIdx((i) => (i === null ? i : (i + 1) % photos.length));
+
+  useEffect(() => {
+    if (lightboxIdx === null) return;
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "ArrowLeft") goPrev();
+      if (e.key === "ArrowRight") goNext();
+    };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [lightboxIdx]);
+
+  const onTouchStart = (e: React.TouchEvent) => {
+    touchStartX.current = e.touches[0].clientX;
+  };
+  const onTouchEnd = (e: React.TouchEvent) => {
+    if (touchStartX.current === null) return;
+    const dx = e.changedTouches[0].clientX - touchStartX.current;
+    if (Math.abs(dx) > 50) (dx > 0 ? goPrev : goNext)();
+    touchStartX.current = null;
+  };
 
   return (
     <section id="galeria" className="py-20 bg-background">
