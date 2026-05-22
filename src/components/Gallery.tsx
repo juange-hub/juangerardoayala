@@ -168,6 +168,14 @@ export const Gallery = () => {
               >
                 <ChevronRight className="w-6 h-6" />
               </button>
+              <button
+                type="button"
+                onClick={() => setLightboxIdx(null)}
+                aria-label="Cerrar"
+                className="absolute right-3 top-3 flex items-center justify-center w-11 h-11 rounded-full bg-black/60 hover:bg-black/80 text-white transition focus:outline-none focus:ring-2 focus:ring-accent shadow-lg"
+              >
+                <X className="w-6 h-6" />
+              </button>
               <div className="absolute bottom-3 left-1/2 -translate-x-1/2 px-3 py-1 rounded-full bg-black/50 text-white text-xs tracking-wide">
                 {(lightboxIdx ?? 0) + 1} / {photos.length}
               </div>
