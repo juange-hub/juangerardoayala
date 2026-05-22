@@ -45,27 +45,28 @@ interface GalleryPhoto {
   alt: string;
 }
 
-// Orden visual: alterna flautista / director, color / blanco y negro,
-// y panorámicas con verticales para un ritmo natural.
+// Orden: primero todas las fotos como flautista, luego como director de orquesta.
 const photos: GalleryPhoto[] = [
+  // Flautista
   { thumb: g7343_800, full: g7343_1400, alt: "Juan Gerardo Ayala con flauta en el teatro, blanco y negro" },
-  { thumb: g7898_800, full: g7898_1400, alt: "Director sonriente con batuta en posición de inicio" },
   { thumb: g7322_800, full: g7322_1400, alt: "Flautista en el teatro con saco vino tinto" },
   { thumb: g7691_800, full: g7691_1400, alt: "Retrato profesional con flauta junto a ventanal" },
-  { thumb: g7802_800, full: g7802_1400, alt: "Director con saco negro y corbata morada, brazos cruzados" },
   { thumb: g7333_800, full: g7333_1400, alt: "Flautista sosteniendo la flauta en alto en sala de conciertos" },
   { thumb: g7592_800, full: g7592_1400, alt: "Interpretación de flauta en sala de conciertos, blanco y negro" },
-  { thumb: g7884_800, full: g7884_1400, alt: "Director sosteniendo la batuta con ambas manos" },
   { thumb: g7700_800, full: g7700_1400, alt: "Retrato sonriente con flauta apoyada al hombro" },
-  { thumb: g7878_800, full: g7878_1400, alt: "Director apoyado en barandal con batuta, blanco y negro" },
   { thumb: g7441_800, full: g7441_1400, alt: "Flautista sonriente entre butacas del teatro" },
   { thumb: g7746_800, full: g7746_1400, alt: "Flautista tocando junto a escalera, blanco y negro" },
-  { thumb: g7882_800, full: g7882_1400, alt: "Director de pie con batuta en la mano" },
   { thumb: g7662_800, full: g7662_1400, alt: "Flautista interpretando junto a estructura metálica, blanco y negro" },
-  { thumb: g7805_800, full: g7805_1400, alt: "Director de perfil con batuta en pose contemplativa" },
   { thumb: g7687_800, full: g7687_1400, alt: "Retrato sonriente con flauta vertical" },
-  { thumb: g7921_800, full: g7921_1400, alt: "Director marcando con batuta, retrato en blanco y negro" },
   { thumb: g7673_800, full: g7673_1400, alt: "Retrato profesional apoyado en barandal con flauta" },
+  // Director de orquesta
+  { thumb: g7898_800, full: g7898_1400, alt: "Director sonriente con batuta en posición de inicio" },
+  { thumb: g7802_800, full: g7802_1400, alt: "Director con saco negro y corbata morada, brazos cruzados" },
+  { thumb: g7884_800, full: g7884_1400, alt: "Director sosteniendo la batuta con ambas manos" },
+  { thumb: g7878_800, full: g7878_1400, alt: "Director apoyado en barandal con batuta, blanco y negro" },
+  { thumb: g7882_800, full: g7882_1400, alt: "Director de pie con batuta en la mano" },
+  { thumb: g7805_800, full: g7805_1400, alt: "Director de perfil con batuta en pose contemplativa" },
+  { thumb: g7921_800, full: g7921_1400, alt: "Director marcando con batuta, retrato en blanco y negro" },
 ];
 
 export const Gallery = () => {
