@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { ArrowUp, MessageCircle } from "lucide-react";
 
 /**
- * Acciones flotantes (solo en escritorio / md+):
+ * Acciones flotantes (todos los tamaños):
  *  - WhatsApp directo
  *  - Volver arriba (aparece después de scroll)
  */
@@ -20,7 +20,7 @@ export const FloatingActions = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
 
   return (
-    <div className="hidden md:flex fixed bottom-6 right-6 z-40 flex-col items-end gap-3">
+    <div className="flex fixed bottom-6 right-6 z-40 flex-col items-end gap-3">
       <a
         href="https://wa.me/595971664878?text=Hola%2C%20me%20gustar%C3%ADa%20contactarte"
         target="_blank"
