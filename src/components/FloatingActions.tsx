@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { ArrowUp, MessageCircle } from "lucide-react";
 
 /**
- * Acciones flotantes (solo en escritorio / md+):
+ * Acciones flotantes (todos los tamaños):
  *  - WhatsApp directo
  *  - Volver arriba (aparece después de scroll)
  */
