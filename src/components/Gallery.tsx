@@ -138,7 +138,7 @@ export const Gallery = () => {
       </div>
 
       <Dialog open={!!lightbox} onOpenChange={(open) => !open && setLightboxIdx(null)}>
-        <DialogContent className="max-w-5xl p-0 overflow-hidden bg-black border-0">
+        <DialogContent className="max-w-5xl p-0 overflow-hidden bg-black border-0 [&>button]:hidden">
           <DialogTitle className="sr-only">{lightbox?.alt ?? "Foto"}</DialogTitle>
           {lightbox && (
             <div
