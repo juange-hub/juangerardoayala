@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from "react";
-import { Camera, ChevronLeft, ChevronRight } from "lucide-react";
+import { Camera, ChevronLeft, ChevronRight, X } from "lucide-react";
 import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
 
 import g7343_800 from "@/assets/gallery/DSC_7343-800.jpg";
