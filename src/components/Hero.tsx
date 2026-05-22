@@ -170,7 +170,7 @@ export const Hero = () => {
           <Button
             size="lg"
             variant="outline"
-            className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary transition-[var(--transition-smooth)]"
+            className="bg-background/10 backdrop-blur-sm border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary transition-[var(--transition-smooth)]"
             onClick={() => scrollToSection("bio")}
           >
             Conocer Más
