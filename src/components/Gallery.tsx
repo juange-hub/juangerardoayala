@@ -110,9 +110,6 @@ export const Gallery = () => {
           <h2 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">
             Momentos en escena
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Una mirada visual a mi trabajo como flautista y director de orquesta.
-          </p>
         </div>
 
         <div className="columns-2 md:columns-3 lg:columns-4 gap-3 md:gap-4 [column-fill:_balance] max-w-6xl mx-auto">
