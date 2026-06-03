@@ -103,12 +103,9 @@ export const Gallery = () => {
     <section id="galeria" className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-accent/10 text-accent text-sm font-medium mb-4">
-            <Camera className="w-4 h-4" />
+          <h2 className="text-4xl md:text-5xl font-bold text-foreground inline-flex items-center gap-3">
+            <Camera className="w-7 h-7 md:w-8 md:h-8 text-accent" />
             Galería
-          </div>
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">
-            Momentos en escena
           </h2>
         </div>
 
