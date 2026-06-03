@@ -77,10 +77,8 @@ export const Bio = () => {
             y su designación como{" "}
             <span className="text-primary font-semibold">"Artista por la Paz" de la UNESCO (2016)</span>{" "}
             junto al ensamble H2O. Ha integrado agrupaciones de prestigio como el{" "}
-            <span className="text-foreground font-medium">Ensamble Zípoli</span>, el{" "}
-            <span className="text-foreground font-medium">Quinteto de Viento Madera de la OSN</span>{" "}
-            y la{" "}
-            <span className="text-foreground font-medium">Orquesta del Congreso de la Nación</span>, manteniendo siempre el compromiso de evolucionar en cada ámbito de su vida profesional.
+            <span className="text-foreground font-medium">Ensamble Zípoli</span> y el{" "}
+            <span className="text-foreground font-medium">Quinteto de Viento Madera de la OSN</span>, manteniendo siempre el compromiso de evolucionar en cada ámbito de su vida profesional.
           </p>
         </div>
 
