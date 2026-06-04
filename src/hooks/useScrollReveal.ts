@@ -23,6 +23,10 @@ export const useScrollReveal = () => {
         s.classList.add("is-revealed");
       } else {
         s.classList.add("reveal-on-scroll");
+        // Auto-stagger: aplica cascada a hijos directos de grillas y listas
+        s.querySelectorAll(".grid, ul, ol").forEach((g) =>
+          g.classList.add("stagger-group")
+        );
       }
     });
 
