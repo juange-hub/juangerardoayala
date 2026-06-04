@@ -12,8 +12,10 @@ import { WhyStudy } from "@/components/WhyStudy";
 import { Classes } from "@/components/Classes";
 import { Footer } from "@/components/Footer";
 import { FloatingActions } from "@/components/FloatingActions";
+import { useScrollReveal } from "@/hooks/useScrollReveal";
 
 const Index = () => {
+  useScrollReveal();
   return (
     <div className="min-h-screen">
       <Header />
