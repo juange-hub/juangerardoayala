@@ -99,7 +99,7 @@ export const Hero = () => {
   return (
     <section
       id="hero"
-      className="relative min-h-screen flex items-end pb-4 md:pb-16 overflow-hidden"
+      className="relative w-full min-h-screen flex items-end pb-4 md:pb-16 overflow-hidden"
       onTouchStart={onTouchStart}
       onTouchMove={onTouchMove}
       onTouchEnd={onTouchEnd}
@@ -115,7 +115,7 @@ export const Hero = () => {
           {slides.map((slide, idx) => (
             <div
               key={idx}
-              className="h-full relative bg-primary"
+              className="h-full min-w-0 shrink-0 relative bg-primary"
               style={{ width: `${100 / slides.length}%` }}
             >
               <img
@@ -124,7 +124,7 @@ export const Hero = () => {
                 sizes={SLIDE_SIZES}
                 alt={slide.alt}
                 style={{ objectPosition: (isMobile && slide.objectPositionMobile) || slide.objectPosition || "center top" }}
-                className="w-full h-full object-cover"
+                className="absolute inset-0 block w-full h-full max-w-none object-cover"
                 fetchPriority={idx === 0 ? "high" : "low"}
                 loading={idx === 0 ? "eager" : "lazy"}
                 decoding="async"
