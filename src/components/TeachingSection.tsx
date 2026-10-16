@@ -101,10 +101,16 @@ export const TeachingSection = () => {
                     <p className="text-sm text-muted-foreground mb-4">
                       {modality.description}
                     </p>
-                    <div className="flex items-center gap-2 text-sm text-muted-foreground mb-4">
-                      <Phone className="w-4 h-4" />
+                    <a
+                      href={`https://wa.me/${modality.phone.replace(/\D/g, "")}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={`Consultar por WhatsApp: ${modality.title}, ${modality.phone}`}
+                      className="inline-flex min-h-11 items-center gap-2 text-sm text-primary underline underline-offset-4 mb-4 hover:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring rounded-sm"
+                    >
+                      <Phone className="w-4 h-4" aria-hidden="true" />
                       <span>{modality.phone}</span>
-                    </div>
+                    </a>
                     <Button 
                       variant="outline" 
                       size="sm"
