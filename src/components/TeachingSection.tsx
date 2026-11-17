@@ -1,24 +1,6 @@
-import { GraduationCap, Users, Sparkles, MapPin, Video, Phone } from "lucide-react";
+import { MapPin, Video, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-
-const levels = [
-  {
-    icon: Users,
-    title: "Jóvenes y Adultos",
-    description: "Técnica profesional adaptada a tus objetivos musicales, sin importar tu edad o experiencia previa"
-  },
-  {
-    icon: GraduationCap,
-    title: "Estudiantes Avanzados",
-    description: "Preparación para conservatorios, audiciones y concursos"
-  },
-  {
-    icon: Sparkles,
-    title: "Aficionados",
-    description: "Aprende a tu ritmo y disfruta el placer de hacer música"
-  }
-];
 
 const modalities = [
   {
@@ -51,32 +33,11 @@ export const TeachingSection = () => {
             Clases Particulares
           </span>
           <h2 className="text-3xl md:text-5xl font-serif text-foreground mb-6">
-            Enseñanza Personalizada para<br />
-            <span className="text-primary">Todos los Niveles y Edades</span>
+            Clases de flauta con atención personalizada
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Formación integral desde la experiencia orquestal, solista y escénica. Mi metodología se adapta a tu ritmo de aprendizaje, 
-            tus metas y tu disponibilidad para que alcances tu máximo potencial musical.
+            Un acompañamiento enfocado en tu técnica, interpretación y objetivos musicales.
           </p>
-        </div>
-
-        <div className="grid sm:grid-cols-1 md:grid-cols-3 gap-6 mb-16">
-          {levels.map((level, index) => (
-            <div 
-              key={index}
-              className="group bg-card border border-border/50 rounded-2xl p-6 text-center hover:shadow-elegant hover:border-primary/30 transition-all duration-300"
-            >
-              <div className="w-16 h-16 mx-auto mb-4 bg-primary/10 rounded-2xl flex items-center justify-center group-hover:bg-primary/20 transition-colors">
-                <level.icon className="w-8 h-8 text-primary" />
-              </div>
-              <h3 className="text-lg font-semibold text-foreground mb-2">
-                {level.title}
-              </h3>
-              <p className="text-sm text-muted-foreground">
-                {level.description}
-              </p>
-            </div>
-          ))}
         </div>
 
         {/* Modalidades */}
