@@ -21,6 +21,7 @@ const Index = () => {
       <Header />
       <Hero />
       <TeachingSection />
+      <Classes />
       <Bio />
       <Experience />
       <Projects />
@@ -29,7 +30,6 @@ const Index = () => {
       <Multimedia />
       <Leadership />
       <WhyStudy />
-      <Classes />
       <Footer />
       <FloatingActions />
     </div>
